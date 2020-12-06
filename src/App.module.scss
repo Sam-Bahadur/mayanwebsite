@@ -1,0 +1,8 @@
+@import "./components/common/common.module.scss";
+
+body {
+  background-color: $background_primary;
+  background-image: url(../src/assets/img/illustration1.svg);
+  background-repeat: no-repeat;
+  color: white;
+}

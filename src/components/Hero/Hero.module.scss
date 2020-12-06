@@ -1,0 +1,14 @@
+@import "../common/common.module.scss";
+.hero_text {
+  font-size: $headerbig;
+  font-weight: 700;
+  text-align: center;
+  span {
+    color: $mayan_color;
+  }
+}
+.hero_desc {
+  font-size: $headersmall;
+  text-align: center;
+  color: $fontsecondary;
+}

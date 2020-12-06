@@ -1,0 +1,15 @@
+@import "../common/common.module.scss";
+
+slogan {
+  .heading {
+    font-size: $headerbig;
+    text-align: center;
+    font-weight: 700;
+  }
+  .description {
+    text-align: center;
+    font-size: $desc;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+}

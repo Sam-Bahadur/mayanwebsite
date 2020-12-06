@@ -1,0 +1,47 @@
+@import "../common/common.module.scss";
+
+works {
+  margin: 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  .work {
+    padding: 1rem;
+    margin: 1rem;
+    width: 25%;
+    height: auto;
+    background: teal;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex: 1;
+    .work_image {
+      border-radius: 50%;
+      margin: 0.5rem auto;
+      width: max-content;
+      font-size: 2rem;
+      position: relative;
+      &::before {
+        content: "";
+        height: 50px;
+        width: 50px;
+        background: chocolate;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: -0.5rem;
+        opacity: 0.3;
+      }
+    }
+    .work_title {
+      font-size: $headersmall;
+      font-weight: 700;
+      text-align: center;
+      margin: 0.5rem 0rem;
+    }
+    .work_desc {
+      font-size: $desc;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

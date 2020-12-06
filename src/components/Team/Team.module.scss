@@ -1,0 +1,49 @@
+@import "../common/common.module.scss";
+
+team {
+  .team_top {
+    font-size: $header;
+    text-align: center;
+    font-weight: 700;
+  }
+  .team {
+    display: flex;
+    .member {
+      position: relative;
+      padding: 2rem;
+      margin: 1rem;
+      width: max-content;
+      height: auto;
+      background: $background_secondary;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      flex: 1;
+      .member_image {
+        margin: 0 auto;
+        width: fit-content;
+        img {
+          width: 5rem;
+        }
+      }
+      .member_desc {
+        padding: 0 0 2rem 0;
+      }
+      .member_name {
+        position: absolute;
+        width: 100%;
+        bottom: 1rem;
+        color: $mayan_color;
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: 1.5rem;
+          left: 0;
+          height: 2px;
+          background: rgb(105, 105, 105);
+          width: 80%;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

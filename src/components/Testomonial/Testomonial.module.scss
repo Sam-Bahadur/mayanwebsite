@@ -1,0 +1,17 @@
+@import "../common/common.module.scss";
+testomonial {
+  font-size: $header;
+  .testominials {
+    display: flex;
+    .testominial {
+      flex: 1;
+      .testomonial_desc {
+        font-size: $desc;
+        color: crimson;
+      }
+      .testomonial_name {
+        color: yellowgreen;
+      }
+    }
+  }
+}

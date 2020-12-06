@@ -1,0 +1,37 @@
+@import "../common/common.module.scss";
+header {
+  position: relative;
+  padding: 2rem 0rem;
+  .extra_info {
+    text-align: center;
+    color: aliceblue;
+    font-size: medium;
+    padding: 0.5rem;
+  }
+  .appbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    // background: teal;
+    z-index: 22;
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+    }
+    h5 {
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  }
+  .navlist {
+    display: flex;
+    margin-left: auto;
+    .nav_item {
+      padding: 1rem;
+      color: whitesmoke;
+      font-size: ($headersmall);
+      cursor: pointer;
+    }
+  }
+}
