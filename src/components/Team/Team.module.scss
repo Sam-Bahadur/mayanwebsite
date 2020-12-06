@@ -8,16 +8,17 @@ team {
   }
   .team {
     display: flex;
+    flex-wrap: wrap;
     .member {
       position: relative;
       padding: 2rem;
       margin: 1rem;
-      width: max-content;
-      height: auto;
+      width: fit-content;
+      height: fit-content;
       background: $background_secondary;
       border-top-left-radius: 30px;
       border-bottom-right-radius: 30px;
-      flex: 1;
+      flex: 1 1 250px;
       .member_image {
         margin: 0 auto;
         width: fit-content;
@@ -32,7 +33,6 @@ team {
         position: absolute;
         width: 100%;
         bottom: 1rem;
-        color: $mayan_color;
         &::after {
           position: absolute;
           content: "";
@@ -43,7 +43,26 @@ team {
           width: 80%;
           opacity: 0.8;
         }
+        span {
+          color: $mayan_color;
+        }
       }
     }
+  }
+}
+
+.mouseover_member {
+  // position: relative;
+  padding: 2rem;
+  margin: 1rem;
+  width: fit-content;
+  height: max-content;
+  background: $background_secondary;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  flex: 1;
+  .mouseover_member_social {
+    font-size: $header;
+    display: flex;
   }
 }

@@ -1,43 +1,32 @@
 import React from "react";
 import style from "./Team.module.scss";
 import { Container } from "@material-ui/core";
-import pradeep from "../../assets/img/members/pradeep.jpg";
+import TeamSingle from "./TeamSingle";
 
-export default function Team() {
+export default function Team(props) {
   return (
     <Container>
       <team>
         <div className={style.team_top}>Our Team</div>
         <div className={style.team}>
-          <div className={style.member}>
-            <div className={style.member_image}>
-              <img src={pradeep} alt="" />
-            </div>
-            <div className={style.member_desc}>
-              My name is khan and i am not a terrorist
-            </div>
-            <div className={style.member_name}>Pradeep</div>
-          </div>
-          <div className={style.member}>
-            <div className={style.member_image}>
-              <img src={pradeep} alt="" />
-            </div>
-            <div className={style.member_desc}>
-              My name is khan and i am not a terrorist
-            </div>
-            <div className={style.member_name}>Pradeep</div>
-          </div>
-          <div className={style.member}>
-            <div className={style.member_image}>
-              <img src={pradeep} alt="" />
-            </div>
-            <div className={style.member_desc}>
-              My name is khan and i am not a terrorist Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Corporis, omnis sunt cum itaque
-              et accusantium libero dignissimos odit assumenda placeat!
-            </div>
-            <div className={style.member_name}>Pradeep</div>
-          </div>
+          <TeamSingle
+            name={"pradeep"}
+            phone={"+977-9843534725"}
+            post={"Web Developer"}
+            key={1}
+          />
+          <TeamSingle
+            name={"Madhu"}
+            phone={"+977-9843534725"}
+            post={"Peon"}
+            key={2}
+          />
+          <TeamSingle
+            name={"prakhyat"}
+            phone={"+977-9843534725"}
+            post={"Peon"}
+            key={3}
+          />
         </div>
       </team>
     </Container>
