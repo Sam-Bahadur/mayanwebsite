@@ -1,0 +1,94 @@
+@import "../common/common.module.scss";
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background: $background_secondary;
+  opacity: 1;
+  padding: 0 5rem;
+  .contact_social {
+    display: flex;
+    div {
+      font-size: 2rem;
+      margin: 0.2rem;
+      color: $mayan_color;
+      a {
+        transition: ease-in-out 0.2s color;
+        &:hover {
+          color: #d6a757;
+        }
+      }
+    }
+  }
+  .contact_main {
+    align-self: center;
+    flex: 1;
+    h2 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  .form {
+    span {
+      padding: 1rem;
+    }
+    flex: 1;
+    // margin: 0 auto;
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      margin: 1rem 0;
+      display: block;
+      width: 100%;
+      min-width: 20ch;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid $mayan_color;
+      // border-width: ;
+      background: $background_secondary;
+      font-size: 1.5rem;
+      // box-shadow: 2px 2px 5px 0px teal;
+      border-radius: 5px;
+      resize: vertical;
+      color: white;
+      &::placeholder {
+        // color: Black;
+        color: white;
+        font-weight: 700;
+        opacity: 0.2;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    input[type="button"] {
+      width: max-content;
+      color: black;
+      padding: 0.5rem 1rem;
+      display: block;
+      margin: 0.5rem auto;
+      background: $background_teal;
+      border-radius: 10px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        background: rgb(0, 214, 214);
+      }
+    }
+  }
+}
+.map {
+  margin: 2rem 0;
+  .map_content {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+  }
+  background: $background_secondary;
+  .map_text {
+    text-align: center;
+  }
+}

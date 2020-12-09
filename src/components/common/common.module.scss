@@ -3,13 +3,17 @@ $primary: rgb(44, 44, 44);
 $fontprimary: whitesmoke;
 $fontsecondary: RGB(160, 167, 174);
 $background_primary: RGB(22, 23, 25);
-$mayan_color: RGB(249, 241, 166);
+$background_primary_light: rgb(68, 68, 68);
+// $mayan_color: RGB(249, 241, 166);
+$mayan_color: #a98343;
 $background_secondary: RGB(37, 40, 45);
+$background_teal: teal;
 
 // typography
 $headerbig: 3rem;
 $header: 2rem;
 $headersmall: 1.5rem;
 $desc: 1.2rem;
+$descbig: 1.4rem;
 
 $marginsection: 3rem;

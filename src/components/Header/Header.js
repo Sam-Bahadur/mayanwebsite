@@ -12,7 +12,9 @@ import Slide from "@material-ui/core/Slide";
 import Button from "@material-ui/core/Button";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import logo from "../../assets/img/logomayan.png";
+// import logo from "../../assets/img/logomayan.png";
+import Logo from "./../common/logo/Logo";
+import { Link } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -71,12 +73,17 @@ export default function Header() {
           +977-9843534725 &nbsp; &nbsp; &nbsp; &nbsp; info@mayanmedia.com
         </div>
         <div className={style.appbar}>
-          <img src={logo} alt="" srcset="" />
+          {/* <img src={logo} alt="" srcset="" /> */}
+          <Logo />
           <div className={style.navlist}>
-            <div className={style.nav_item}>Home</div>
+            <div className={style.nav_item}>
+              <Link to="/">Home</Link>
+            </div>
             <div className={style.nav_item}>About Us</div>
             <div className={style.nav_item}>Projects</div>
-            <div className={style.nav_item}>Contact</div>
+            <div className={style.nav_item}>
+              <Link to="/contact">Contact</Link>
+            </div>
           </div>
         </div>
       </header>

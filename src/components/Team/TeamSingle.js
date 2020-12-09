@@ -5,32 +5,45 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaLinkedin,
+  FaGithubSquare,
 } from "react-icons/fa";
 import pradeep from "../../assets/img/members/pradeep.jpg";
+import { Link } from "react-router-dom";
 
 export default function TeamSingle(props) {
   const [ishover, setishover] = useState(false);
-  const members = [
-    {
-      email: "pradipktimsina@gmail.com",
-      phone: "+977-9843534725",
-    },
-  ];
+  // const members = [
+  //   {
+  //     email: "pradipktimsina@gmail.com",
+  //     phone: "+977-9843534725",
+  //   },
+  // ];
   const hovering = (e) => {
     return (
       <div className={style.mouseover_member}>
-        {members[0].email} <br></br>
-        {members[0].phone}
+        {props.email} <br></br>
+        {props.phone}
         <br></br>
         <div className={style.mouseover_member_social}>
           <div>
-            <FaFacebookSquare />
+            <a href={props.fb} target="_blank" rel="noreferrer">
+              <FaFacebookSquare />
+            </a>
           </div>
           <div>
-            <FaInstagramSquare />
+            <a href={props.in} target="_blank" rel="noreferrer">
+              <FaInstagramSquare />
+            </a>
           </div>
           <div>
-            <FaLinkedin />
+            <a href={props.ln} target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </div>
+          <div>
+            <a href={props.git} target="_blank" rel="noreferrer">
+              <FaGithubSquare />
+            </a>
           </div>
         </div>
       </div>
@@ -47,7 +60,7 @@ export default function TeamSingle(props) {
       ) : (
         <>
           <div className={style.member_image}>
-            <img src={pradeep} alt="" />
+            <img src={props.image} alt="" />
           </div>
           <div className={style.member_desc}>
             My name is khan and i am not a terrorist Lorem ipsum dolor sit amet

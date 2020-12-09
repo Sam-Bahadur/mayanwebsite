@@ -1,0 +1,31 @@
+@import "../common/common.module.scss";
+
+footer {
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+  }
+  .extra {
+    display: flex;
+    .social {
+      font-size: $desc;
+      color: $mayan_color;
+      padding: 0.5rem;
+    }
+  }
+}
+
+end_footer {
+  margin-bottom: 2rem;
+  display: flex;
+  li {
+    margin-right: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+  }
+  :first-child {
+    margin-left: auto;
+  }
+}
