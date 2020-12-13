@@ -9,9 +9,9 @@ header {
     padding: 0.5rem;
   }
   .appbar {
-    position: sticky;
+    // width: 100%;
     display: flex;
-    top: 0px;
+    // background: $background_primary;
     h5 {
       padding: 0.5rem;
       cursor: pointer;
@@ -24,6 +24,7 @@ header {
       padding: 1rem;
       color: whitesmoke;
       font-size: ($headersmall);
+      font-weight: 800;
       cursor: pointer;
     }
   }

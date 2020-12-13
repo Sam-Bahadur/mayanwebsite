@@ -68,10 +68,6 @@ export default function Header() {
         <div className={style.extra_info}>
           <h6>+977-9843534725</h6>
         </div> */}
-
-        <div className={style.extra_info}>
-          +977-9843534725 &nbsp; &nbsp; &nbsp; &nbsp; info@mayanmedia.com
-        </div>
         <div className={style.appbar}>
           {/* <img src={logo} alt="" srcset="" /> */}
           <Logo />
@@ -85,6 +81,9 @@ export default function Header() {
               <Link to="/contact">Contact</Link>
             </div>
           </div>
+        </div>
+        <div className={style.extra_info}>
+          +977-9843534725 &nbsp; &nbsp; &nbsp; &nbsp; info@mayanmedia.com
         </div>
       </header>
     </Container>

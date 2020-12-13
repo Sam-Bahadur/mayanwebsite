@@ -69,7 +69,8 @@ team {
     a {
       transition: 0.2s color ease-in-out;
       &:hover {
-        color: teal;
+        color: $mayan_color;
+        // background: teal;
       }
     }
   }

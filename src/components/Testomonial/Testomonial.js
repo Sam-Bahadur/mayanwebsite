@@ -1,6 +1,10 @@
 import React from "react";
 import style from "./Testomonial.module.scss";
 import { Container } from "@material-ui/core";
+import Work_image from "./../Work/Work_image";
+import scroll1 from "../../assets/img/pages/full_page1.png";
+import scroll2 from "../../assets/img/pages/full_page2.png";
+import scroll3 from "../../assets/img/pages/full_page3.png";
 
 export default function Testomonial() {
   return (
@@ -30,6 +34,7 @@ export default function Testomonial() {
                 <span>www.sharmilakarki.com</span>
               </a>
             </div>
+            <Work_image image={scroll2} />
           </div>
           <div className={style.testomonial}>
             <div className={style.testomonial_desc}>
@@ -57,6 +62,7 @@ export default function Testomonial() {
                 <span>www.jagaran-nepal.org.np</span>
               </a>
             </div>
+            <Work_image image={scroll3} />
           </div>
           <div className={style.testomonial}>
             <div className={style.testomonial_desc}>
@@ -80,6 +86,7 @@ export default function Testomonial() {
                 <span>www.sharmilakarki.com</span>
               </a>
             </div>
+            <Work_image image={scroll2} />
           </div>
         </div>
       </testomonial>

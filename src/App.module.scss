@@ -3,6 +3,7 @@
 body {
   background-color: $background_primary;
   background-image: url(../src/assets/img/illustration1.svg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(231, 231, 231);
 }

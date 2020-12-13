@@ -24,11 +24,11 @@ function App() {
           <Switch>
             {/* <Route exact path="/work" component={() => <Work_detail desc={} />} /> */}
             <Route exact path="/work" component={Work_detail} />
-            {/* <Route exact path="/contact" component={Contact} /> */}
+            <Route exact path="/contact" component={Contact} />
             <Route exact path="/" component={Home} />
             <Route exact component={UnderConstruction} />
-            {/* <Footer /> */}
           </Switch>
+          <Footer />
         </HashRouter>
       </body>
     </>

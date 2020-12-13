@@ -8,7 +8,7 @@ export default function Hero() {
     <Container>
       <div className={style.hero_text}>
         Mayan Media and &nbsp;
-        <span>Consulting</span>
+        <span>IT Consulting</span>
       </div>
       <div className={style.hero_desc}>
         One stop solution for all the digital needs
