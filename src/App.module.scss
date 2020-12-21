@@ -6,4 +6,27 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: rgb(231, 231, 231);
+  .body {
+    min-height: 100vh;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    .construction {
+      padding: 0rem;
+      width: min-content;
+      height: min-content;
+      margin: 1rem auto;
+      animation: rotateimage 5s linear infinite;
+    }
+    @keyframes rotateimage {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      100% {
+        transform-origin: center;
+        transform: rotateZ(360deg);
+      }
+    }
+  }
 }

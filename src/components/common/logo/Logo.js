@@ -5,6 +5,7 @@ export default function Logo() {
   const style = {
     logo: {
       width: "80px",
+      maxHeight: "80px",
     },
   };
   return (

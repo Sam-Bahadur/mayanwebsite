@@ -12,8 +12,10 @@ works {
     background: $background_secondary;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    flex: 1 1 25%;
-    max-width: 28%;
+    // flex: 1 1 25%;
+    flex: 1 1 330px;
+    // min-width: 300px;
+    // max-width: 28%;
     .work_image {
       margin: 0.5rem auto;
       width: max-content;

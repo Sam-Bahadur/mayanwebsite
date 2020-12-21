@@ -9,11 +9,13 @@ import scroll3 from "../../assets/img/pages/full_page3.png";
 export default function Testomonial() {
   return (
     <Container>
-      <testomonial>
-        <div className={style.header}>Customer Testomonials</div>
+      <testomonial id="work">
+        <div className={style.header}>Our Works</div>
         <div className={style.testomonials}>
           <div className={style.testomonial}>
+            <Work_image link={"http://www.sharmilakarki.com"} image={scroll2} />
             <div className={style.testomonial_desc}>
+              <div className={style.desc_title}>Testomonial</div>
               Working with Mayan media has been a wonderful experience for me.
               The team of Mayan are energetic nepali youths who are well groomed
               professionals in my opinion. The team presented me with innovative
@@ -34,10 +36,14 @@ export default function Testomonial() {
                 <span>www.sharmilakarki.com</span>
               </a>
             </div>
-            <Work_image image={scroll2} />
           </div>
           <div className={style.testomonial}>
+            <Work_image
+              image={scroll3}
+              link={"http://www.jagaran-nepal.org.np"}
+            />
             <div className={style.testomonial_desc}>
+              <div className={style.desc_title}>Testomonial</div>
               Our partnership with Mayan media has been tremendously fruitful.
               Mayan is definitely a one stop solution for all the media and IT
               needs as they claim to be. In terms of IT services, we worked with
@@ -62,10 +68,11 @@ export default function Testomonial() {
                 <span>www.jagaran-nepal.org.np</span>
               </a>
             </div>
-            <Work_image image={scroll3} />
           </div>
-          <div className={style.testomonial}>
+          {/* <div className={style.testomonial}>
+            <Work_image image={scroll1} />
             <div className={style.testomonial_desc}>
+              <div className={style.desc_title}>Testomonial</div>
               Working with Mayan media has been a wonderful experience for me.
               The team of Mayan are energetic nepali youths who are well groomed
               professionals in my opinion. The team presented me with innovative
@@ -86,8 +93,7 @@ export default function Testomonial() {
                 <span>www.sharmilakarki.com</span>
               </a>
             </div>
-            <Work_image image={scroll2} />
-          </div>
+          </div> */}
         </div>
       </testomonial>
     </Container>

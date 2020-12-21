@@ -4,6 +4,7 @@ import Slogan from "./../Slogan/Slogan";
 import Work from "./../Work/Work";
 import Testomonial from "./../Testomonial/Testomonial";
 import Team from "./../Team/Team";
+import Contact from "../Contact/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Work />
       <Testomonial />
       <Team />
+      <Contact />
     </>
   );
 }

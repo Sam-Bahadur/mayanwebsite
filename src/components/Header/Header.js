@@ -1,20 +1,14 @@
 import style from "./Header.module.scss";
-import React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Box from "@material-ui/core/Box";
+import React, { useState, useLayoutEffect } from "react";
 import Container from "@material-ui/core/Container";
-import Slide from "@material-ui/core/Slide";
-import Button from "@material-ui/core/Button";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 // import logo from "../../assets/img/logomayan.png";
-import Logo from "./../common/logo/Logo";
-import { Link } from "react-router-dom";
+import Menu from "./Menu";
+import MenuMobile from "./MenuMobile";
+import { FiPhoneCall } from "react-icons/fi";
+import { GrMail } from "react-icons/gr";
+import { GoLocation } from "react-icons/go";
+import Dividor from "../common/Dividor/Dividor";
 
 const theme = createMuiTheme({
   palette: {
@@ -33,21 +27,49 @@ const theme = createMuiTheme({
   },
 });
 
-function HideOnScroll(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+// function HideOnScroll(props) {
+//   const { children, window } = props;
+//   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
+//   return (
+//     <Slide appear={false} direction="down" in={!trigger}>
+//       {children}
+//     </Slide>
+//   );
+// }
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return size;
 }
 
 export default function Header() {
+  const [width, height] = useWindowSize();
   return (
     <Container>
-      <header>
+      <header id={"header"}>
+        <div className={style.extra_info}>
+          <div>
+            <FiPhoneCall />
+            <h2>+977-9841469812, +977-9843663478</h2>
+          </div>
+          <div>
+            <GrMail />
+            <h2>info@mayanmedia.com.np</h2>
+          </div>
+          <div>
+            <GoLocation />
+            <h2>Anamnagar, Kathmandu</h2>
+          </div>
+        </div>
+        <Dividor />
         {/* <CssBaseline /> */}
         {/* <HideOnScroll>
           <ThemeProvider theme={theme}>
@@ -68,23 +90,7 @@ export default function Header() {
         <div className={style.extra_info}>
           <h6>+977-9843534725</h6>
         </div> */}
-        <div className={style.appbar}>
-          {/* <img src={logo} alt="" srcset="" /> */}
-          <Logo />
-          <div className={style.navlist}>
-            <div className={style.nav_item}>
-              <Link to="/">Home</Link>
-            </div>
-            <div className={style.nav_item}>About Us</div>
-            <div className={style.nav_item}>Projects</div>
-            <div className={style.nav_item}>
-              <Link to="/contact">Contact</Link>
-            </div>
-          </div>
-        </div>
-        <div className={style.extra_info}>
-          +977-9843534725 &nbsp; &nbsp; &nbsp; &nbsp; info@mayanmedia.com
-        </div>
+        {width > 768 ? <Menu /> : <MenuMobile />}
       </header>
     </Container>
   );

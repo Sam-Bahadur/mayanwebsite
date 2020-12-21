@@ -11,7 +11,7 @@ export default function Hero() {
         <span>IT Consulting</span>
       </div>
       <div className={style.hero_desc}>
-        One stop solution for all the digital needs
+        One stop solution for all your digital needs
       </div>
       <Carousel />
     </Container>

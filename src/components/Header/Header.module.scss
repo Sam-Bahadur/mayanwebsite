@@ -1,13 +1,35 @@
 @import "../common/common.module.scss";
 header {
   position: relative;
-  padding: 2rem 0rem;
+  padding: 0.5rem 0rem;
   .extra_info {
-    text-align: center;
     color: aliceblue;
     font-size: medium;
-    padding: 0.5rem;
+    // padding: 0.5rem;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    div {
+      margin: 0 1rem;
+      color: $mayan_color;
+      padding: 0 1rem;
+      // border: solid black 2px;
+      // border-left: solid grey 2px;
+      // border-right: solid grey 2px;
+      h2 {
+        // color: white;
+        margin-left: 1rem;
+        display: inline;
+        font-size: 1rem;
+      }
+    }
   }
+  @media screen and (max-width: 768px) {
+    .extra_info {
+      flex-wrap: wrap;
+    }
+  }
+
   .appbar {
     // width: 100%;
     display: flex;
@@ -26,6 +48,11 @@ header {
       font-size: ($headersmall);
       font-weight: 800;
       cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navlist {
+      flex-direction: column;
     }
   }
 }

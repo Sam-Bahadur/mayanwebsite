@@ -4,7 +4,9 @@ import style from "./Work.module.scss";
 export default function Work_image(props) {
   return (
     <div className={style.scroller}>
-      <img src={props.image} alt="" />
+      <a href={props.link} target="_blank">
+        <img src={props.image} alt="" />
+      </a>
     </div>
   );
 }

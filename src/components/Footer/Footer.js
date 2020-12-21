@@ -3,6 +3,7 @@ import { Container } from "@material-ui/core";
 import style from "./Footer.module.scss";
 import Logo from "./../common/logo/Logo";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -13,23 +14,34 @@ export default function Footer() {
         </div>
         <div className={style.extra}>
           <div className={style.social}>
-            <FaFacebookF />
+            <a href="https://www.facebook.com/mayanmedianepal/">
+              <FaFacebookF />
+            </a>
+          </div>
+          {/* <div className={style.social}>
+            <a href="https://www.facebook.com/mayanmedianepal/">
+              <FaTwitter />
+            </a>
+          </div> */}
+          <div className={style.social}>
+            <a href="https://www.instagram.com/mayanmedianepal/">
+              <FaInstagram />
+            </a>
           </div>
           <div className={style.social}>
-            <FaTwitter />
-          </div>
-          <div className={style.social}>
-            <FaInstagram />
-          </div>
-          <div className={style.social}>
-            <FaYoutube />
+            <a href="https://www.youtube.com/channel/UCmPTP4ZPUiHcbIQy3k5e-Pw">
+              <FaYoutube />
+            </a>
           </div>
         </div>
       </footer>
       <end_footer>
-        <li>About us</li>
-        <li>Contact</li>
-        <li>Support</li>
+        <li>
+          <Link to="/about">About us</Link>
+        </li>
+        <li>
+          <Link to="contact">Contact</Link>
+        </li>
       </end_footer>
     </Container>
   );

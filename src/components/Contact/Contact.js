@@ -1,9 +1,12 @@
 import { Container } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import style from "./Contact.module.scss";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import { FiMail } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
+import { GoLocation } from "react-icons/go";
+import axios from "axios";
 import {
   FaFacebookSquare,
   FaInstagram,
@@ -13,14 +16,47 @@ import {
 import Iframe from "react-iframe";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const { email, name, message, phone } = formData;
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    alert("press ok and wait a few seconds...");
+    const response = await axios.post(
+      `https://nodemailermayan.herokuapp.com/sendemail`,
+      {
+        name,
+        email,
+        phone,
+        message,
+      }
+    );
+    console.log(response);
+    alert("message sent successfully");
+    window.location = "#";
+  };
   return (
     <>
       <Container>
         <div className={style.contact}>
           <div className={style.contact_main}>
             <h2>Mayan media and Consulting</h2>
-            <h4>Anamnagar, Kathmandu</h4>
-            <h4>+977-98xxxxxxxx</h4>
+            <h4>
+              <GoLocation />
+              Anamnagar, Kathmandu
+            </h4>
+            <h4>
+              <FiPhone />
+              +977-9841469812, +977-9843663478
+            </h4>
             <div className={style.contact_social}>
               <div>
                 <a href="http://">
@@ -52,17 +88,46 @@ export default function Contact() {
                   <FiMail />
                 </span>
               </h1>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Phone Number" cols="30" />
-              <textarea
-                name="Message"
-                id=""
-                cols="20"
+              <input
+                className="element"
+                type="text"
+                name="name"
+                value={name}
+                onChange={onChange}
+                placeholder="Name"
+              />
+              <input
+                className="element"
+                type="email"
+                name="email"
+                value={email}
+                onChange={onChange}
+                placeholder="Email Address"
+              />
+              <input
+                id="contactno"
+                className="element"
+                type="text"
+                name="phone"
+                value={phone}
+                onChange={onChange}
+                placeholder="Contact Number"
+              />
+              <textArea
+                type="text"
+                name="message"
+                value={message}
+                onChange={onChange}
+                placeholder="Message Here"
                 rows="5"
-                placeholder="Message"
-              ></textarea>
-              <input type="button" name="submit" value="Send Message →" />
+                cols="30"
+              />
+              <input
+                type="button"
+                name="submit"
+                value="Send Message →"
+                onClick={onSubmit}
+              />
             </form>
           </div>
         </div>
@@ -70,17 +135,17 @@ export default function Contact() {
           <div className={style.map_text}>
             <h1>Visit Us</h1>
           </div>
-          {/* <Iframe
+          <Iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14127.964629962415!2d85.34553237222899!3d27.71755929209402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5db83051fd4772de!2sTimilsina%20Store!5e0!3m2!1sen!2snp!4v1607493765586!5m2!1sen!2snp"
             width="100%"
             className={style.map_content}
-            height="450"
+            height="300"
             frameborder="0"
             style="border:0;"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
-          ></Iframe> */}
+          ></Iframe>
         </div>
       </Container>
     </>
