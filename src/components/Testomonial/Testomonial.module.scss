@@ -14,7 +14,6 @@ testomonial {
     grid-auto-rows: min-content;
     .testomonial {
       margin: 1rem 1rem;
-      // max-width: 40ch;
       // flex: 1;
       position: relative;
       background: $background_secondary;
@@ -25,7 +24,7 @@ testomonial {
         font-size: $desc_small;
         // max-height: 220px;
         height: 220px;
-        overflow-y: scroll;
+        // overflow-y: scroll;
         padding-right: 1rem;
         .desc_title {
           text-align: center;

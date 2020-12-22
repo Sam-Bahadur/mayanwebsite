@@ -5,9 +5,11 @@ import { BiCodeAlt } from "react-icons/bi";
 import { DiCodeigniter } from "react-icons/di";
 import { SiVisualstudiocode } from "react-icons/si";
 import { AiOutlineMobile } from "react-icons/ai";
-import { FaVideo, FaWrench } from "react-icons/fa";
-import { GiPhotoCamera, GiMoneyStack } from "react-icons/gi";
+import { FaVideo, FaWrench, FaCode } from "react-icons/fa";
+import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { BsBrush } from "react-icons/bs";
 
 export default function Work(props) {
   const [isclicked, setisclicked] = useState(0);
@@ -16,7 +18,7 @@ export default function Work(props) {
       <works>
         <div className={style.work}>
           <div className={style.work_image}>
-            <SiVisualstudiocode />
+            <FaCode />
           </div>
           <div className={style.work_title}>Web Design and Development</div>
           <div className={style.work_desc}>
@@ -44,7 +46,7 @@ export default function Work(props) {
         </div>
         <div className={style.work}>
           <div className={style.work_image}>
-            <DiCodeigniter />
+            <SiVisualstudiocode />
           </div>
           <div className={style.work_title}>Software Development</div>
           <div className={style.work_desc}>
@@ -88,7 +90,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 10,
+                desc: 7,
               }}
             >
               Read More
@@ -98,7 +100,7 @@ export default function Work(props) {
         </div>
         <div className={style.work}>
           <div className={style.work_image}>
-            <BiCodeAlt />
+            <BsBrush />
           </div>
           <div className={style.work_title}>Graphic Designing</div>
           <div className={style.work_desc}>
@@ -112,7 +114,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 15,
+                desc: 10,
               }}
             >
               Read More
@@ -122,7 +124,7 @@ export default function Work(props) {
         </div>
         <div className={style.work}>
           <div className={style.work_image}>
-            <BiCodeAlt />
+            <HiOutlineSpeakerphone />
           </div>
           <div className={style.work_title}>Social Media Marketing</div>
           <div className={style.work_desc}>
@@ -226,7 +228,7 @@ export default function Work(props) {
         </div>
         <div className={style.work}>
           <div className={style.work_image}>
-            <GiMoneyStack />
+            <GiShoppingCart />
           </div>
           <div className={style.work_title}>E-commerce systems</div>
           <div className={style.work_desc}>

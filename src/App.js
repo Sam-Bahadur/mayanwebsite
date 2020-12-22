@@ -12,6 +12,7 @@ import { Container } from "@material-ui/core";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Upbtn from "./components/common/Upbtn/Upbtn";
 import Testomonial from "./components/Testomonial/Testomonial";
+import TestomonialDetail from "./components/Testomonial/TestomonialDetail";
 
 function UnderConstruction() {
   return (
@@ -37,7 +38,7 @@ function App() {
             <Switch>
               {/* <Route exact path="/work" component={() => <Work_detail desc={} />} /> */}
               <Route exact path="/services" component={Work_detail} />
-              <Route exact path="/projects" component={Testomonial} />
+              <Route exact path="/projects" component={TestomonialDetail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={Aboutus} />
               <Route exact path="/" component={Home} />

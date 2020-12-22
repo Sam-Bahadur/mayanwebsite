@@ -13,6 +13,7 @@ header {
       margin: 0 1rem;
       color: $mayan_color;
       padding: 0 1rem;
+      position: relative;
       // border: solid black 2px;
       // border-left: solid grey 2px;
       // border-right: solid grey 2px;
@@ -21,6 +22,15 @@ header {
         margin-left: 1rem;
         display: inline;
         font-size: 1rem;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        height: $desc;
+        width: 2px;
+        background: $mayan_color;
+        right: 0;
+        top: 0.2rem;
       }
     }
   }

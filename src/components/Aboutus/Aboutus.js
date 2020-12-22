@@ -38,9 +38,11 @@ export default function Aboutus() {
             designing and development and graphic designing. We believe our
             diverse yet diligent, industrious and conscientious core-team is our
             major asset that will allow Mayan to revolutionize the Media and IT
-            sector of Nepal. The world is heading towards a digital era and we
-            at Mayan promise to be your ally for transitioning into this new
-            era!
+            sector of Nepal.
+          </p>
+          <p>
+            The world is heading towards a digital era and we at Mayan promise
+            to be your ally for transitioning into this new era!
           </p>
         </div>
       </aboutus>

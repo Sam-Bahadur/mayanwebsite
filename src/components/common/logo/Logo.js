@@ -4,8 +4,8 @@ import logo from "../../../assets/img/logomayan.png";
 export default function Logo() {
   const style = {
     logo: {
-      width: "80px",
-      maxHeight: "80px",
+      width: "100px",
+      maxHeight: "100px",
     },
   };
   return (

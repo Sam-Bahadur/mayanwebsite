@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React from "react";
-import hero from "../../assets/img/hero_img1.jpg";
+import hero from "../../assets/img/hero_img2.png";
 import style from "./Carousel.module.scss";
 
 export default function Carousel() {

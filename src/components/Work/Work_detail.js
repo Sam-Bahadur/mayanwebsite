@@ -1,10 +1,26 @@
 import React, { useLayoutEffect } from "react";
 import { Container } from "@material-ui/core";
 import style from "./Work.module.scss";
+import { BiCodeAlt } from "react-icons/bi";
+import { DiCodeigniter } from "react-icons/di";
+import { AiOutlineMobile } from "react-icons/ai";
+import { FaVideo, FaWrench, FaCode } from "react-icons/fa";
+import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
+import { Link } from "react-router-dom";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { BsBrush } from "react-icons/bs";
+import { SiVisualstudiocode } from "react-icons/si";
+import webdesign from "../../assets/img/icons/webdesign.png";
+import ecommerce from "../../assets/img/icons/ecommerce.png";
+import graphicdesign from "../../assets/img/icons/graphicdesign.png";
+import mobileapp from "../../assets/img/icons/mobileapp.png";
+import SEO from "../../assets/img/icons/SEO.png";
+import software from "../../assets/img/icons/software.png";
+import videography from "../../assets/img/icons/videography.png";
 
 export default function Work_detail(props) {
   useLayoutEffect(() => {
-    window.scrollTo(0, props.history.location.desc * 100);
+    window.scrollTo(0, props.history.location.desc * 105);
     // alert();
   });
   return (
@@ -19,6 +35,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={webdesign} alt="" />
+          </div>
           <div className={style.work_title}>Web Design and Development</div>
           <div
             className={style.work_desc}
@@ -58,6 +78,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={software} alt="" />
+          </div>
           <div id="software" className={style.work_title}>
             Software Development
           </div>
@@ -83,6 +107,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={mobileapp} alt="" />
+          </div>
           <div className={style.work_title}>
             Mobile Application development (android/iOS)
           </div>
@@ -122,6 +150,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={graphicdesign} alt="" />
+          </div>
           <div className={style.work_title}>Graphic Designing</div>
           <div
             className={style.work_desc}
@@ -155,6 +187,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={webdesign} alt="" />
+          </div>
           <div className={style.work_title}>Social Media Marketing</div>
           <div
             className={style.work_desc}
@@ -191,6 +227,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={videography} alt="" />
+          </div>
           <div className={style.work_title}>VideoGraphy</div>
           <div
             className={style.work_desc}
@@ -219,45 +259,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
-          <div className={style.work_title}>Web Design and Development</div>
-          <div
-            className={style.work_desc}
-            style={{ width: "100%", height: "min-content" }}
-          >
-            <p>
-              A clean, user-friendly, optimized and snappy website is a must in
-              today’s day and age to attract web traffic. In the 21st century
-              people conduct their research on the internet before doing any
-              work/business with the particular individual, institution or
-              company. At Mayan, we make sure that the web-surfer that visits
-              your website gets the best user experience on the internet: giving
-              you or your company/institution a great first impression.
-            </p>
-            <p>
-              All organizations in today’s digitalized age must have a robust
-              and responsive web design. Furthermore, with the exponential
-              growth in the use of handheld devices i.e. smartphones and
-              tablets, it has become essential that all web platforms perform
-              equally on all forms of devices with exemplary user interface for
-              a flawless and smooth experience.
-            </p>
-            <p>
-              Mayan is your ultimate partner in creating a web platform that
-              will help you and your business/institution achieve a greater
-              milestone. We will help you conceptualize, strategize, design,
-              build and execute your website so that you can succeed in your
-              endeavours.
-            </p>
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={webdesign} alt="" />
           </div>
-        </div>
-        <div
-          className={style.work}
-          style={{
-            height: "min-content",
-            flex: "0 0 90%",
-            margin: "2rem auto",
-          }}
-        >
           <div className={style.work_title}>Photography</div>
           <div
             className={style.work_desc}
@@ -287,6 +292,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={SEO} alt="" />
+          </div>
           <div className={style.work_title}>SEO & Website maintenance</div>
           <div
             className={style.work_desc}
@@ -318,6 +327,10 @@ export default function Work_detail(props) {
             margin: "2rem auto",
           }}
         >
+          <div className={style.work_detail_image}>
+            {/* <FaCode /> */}
+            <img src={ecommerce} alt="" />
+          </div>
           <div className={style.work_title}>E-commerce systems</div>
           <div
             className={style.work_desc}

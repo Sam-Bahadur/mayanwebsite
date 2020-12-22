@@ -17,7 +17,7 @@ export default function Team(props) {
           <TeamSingle
             name={"Aabhusan Khadka"}
             phone={"+977-9841469812"}
-            post={"SEO and UX expert"}
+            post={"Managing Director & UX designer"}
             email={"aabhusan@mayanmedia.com.np"}
             key={2}
             image={aabhushan}

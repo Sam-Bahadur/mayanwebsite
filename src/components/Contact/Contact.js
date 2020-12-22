@@ -136,7 +136,7 @@ export default function Contact() {
             <h1>Visit Us</h1>
           </div>
           <Iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14127.964629962415!2d85.34553237222899!3d27.71755929209402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5db83051fd4772de!2sTimilsina%20Store!5e0!3m2!1sen!2snp!4v1607493765586!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7407617789127!2d85.33102698583453!3d27.694406156829285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe958e4fbbefbfc50!2sMadan%20Bhandari%20Memorial%20College!5e0!3m2!1sen!2snp!4v1608613503994!5m2!1sen!2snp"
             width="100%"
             className={style.map_content}
             height="300"
@@ -145,7 +145,7 @@ export default function Contact() {
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
-          ></Iframe>
+          />
         </div>
       </Container>
     </>
