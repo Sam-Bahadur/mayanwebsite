@@ -10,19 +10,40 @@ import {
 import pradeep from "../../assets/img/members/pradeep.jpg";
 import { Link } from "react-router-dom";
 import { FiMail, FiPhone } from "react-icons/fi";
+import { IoIosAddCircle } from "react-icons/io";
+import { useHistory } from "react-router-dom";
+import TeamDetail from "./TeamDetail";
 
 export default function TeamSingle(props) {
+  const { name, desc, image, email, fb, post } = props;
+  const readmoreClicked = () => {
+    history.push({
+      pathname: `team/${props.name}`,
+      name,
+      desc,
+      image,
+      email,
+      fb,
+      post,
+    });
+  };
   TeamSingle.defaultProps = {
     desc:
       "My name is khan and i am not a terrorist Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita amet deserunt vero excepturi nulla vitae ullam dolore totam molestias repellat    quibusdam blanditiis eaque doloremque, nemo, enim, accusantium autem sit.",
   };
+  let history = useHistory();
   return (
     <div className={style.member}>
       <>
         <div className={style.member_image}>
           <img src={props.image} alt="" />
         </div>
-        <div className={style.member_desc}>{props.desc}</div>
+        <div className={style.member_desc}>
+          {props.desc.slice(0, 280)}...
+          <span onClick={readmoreClicked}>
+            <IoIosAddCircle />
+          </span>
+        </div>
 
         <>
           <div className={style.mouseover_member}>
@@ -50,11 +71,13 @@ export default function TeamSingle(props) {
                   <FaLinkedin />
                 </a>
               </div>
-              <div>
-                <a href={props.git} target="_blank" rel="noreferrer">
-                  <FaGithubSquare />
-                </a>
-              </div>
+              {props.git ? (
+                <div>
+                  <a href={props.git} target="_blank" rel="noreferrer">
+                    <FaGithubSquare />
+                  </a>
+                </div>
+              ) : null}
             </div>
           </div>
         </>

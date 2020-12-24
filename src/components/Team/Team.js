@@ -32,7 +32,9 @@ export default function Team(props) {
             email={"yuyutsucarkey@gmail.com"}
             key={3}
             image={yuyutsu}
-            desc={"details here"}
+            desc={
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia. Voluptate ex ipsam eum voluptas, quos officia odio dolores sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident culpa accusantium velit minima consequuntur, quo ad omnis, sequi porro, eligendi mollitia voluptas ipsum voluptatibus repellendus vero unde! Sapiente officia minus ratione, at corporis eveniet voluptas necessitatibus velit ut? Praesentium vitae est sunt enim repellendus! Sint eius voluptatem, quo eligendi libero magni modi rem ratione provident distinctio quia aliquid facilis officiis ipsam voluptatibus suscipit expedita quaerat aperiam repudiandae vero est quasi quidem! Ut sequi quisquam at, exercitationem nam nulla, nisi corporis, numquam asperiores dolores officiis natus quae! Enim voluptatum nostrum quod similique suscipit, consequatur iusto voluptatibus quaerat exercitationem, veritatis nulla!"
+            }
           />
           <TeamSingle
             name={"pradeep Timsina"}
@@ -75,7 +77,9 @@ export default function Team(props) {
             ln={"https://www.linkedin.com/in/pradip-k-timsina-1b4134176/"}
             git={"https://github.com/Sam-Bahadur"}
             image={anish}
-            desc={"details here"}
+            desc={
+              " dolor, sit amet consectetur adipisicing elit. Quas, mollitia. Voluptate ex ipsam eum voluptas, quos officia odio dolores sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident culpa accusantium velit minima consequuntur, quo ad omnis, sequi porro, eligendi mollitia voluptas ipsum voluptatibus repellendus vero unde! Sapiente officia minus ratione, at corporis eveniet voluptas necessitatibus velit ut? Praesentium vitae est sunt enim repellendus! Sint eius voluptatem, quo eligendi libero magni modi rem ratione provident distinctio quia aliquid facilis officiis ipsam voluptatibus suscipit expedita quaerat aperiam repudiandae vero est quasi quidem! Ut sequi quisquam at, exercitationem nam nulla, nisi corporis, numquam asperiores dolores officiis natus quae! Enim voluptatum nostrum quod similique suscipit, consequatur iusto voluptatibus quaerat exercitationem, veritatis nulla!"
+            }
           />
         </div>
       </team>

@@ -14,11 +14,7 @@ header {
       color: $mayan_color;
       padding: 0 1rem;
       position: relative;
-      // border: solid black 2px;
-      // border-left: solid grey 2px;
-      // border-right: solid grey 2px;
       h2 {
-        // color: white;
         margin-left: 1rem;
         display: inline;
         font-size: 1rem;
@@ -31,6 +27,12 @@ header {
         background: $mayan_color;
         right: 0;
         top: 0.2rem;
+      }
+      position: relative;
+      span {
+        position: absolute;
+        left: 0.5rem;
+        bottom: -0.1rem;
       }
     }
   }
@@ -58,8 +60,38 @@ header {
       font-size: ($headersmall);
       font-weight: 800;
       cursor: pointer;
+      position: relative;
+      .services {
+        padding: 1rem;
+        font-size: 1.5rem;
+        // background: grey;
+        background: $background_secondary;
+        list-style: none;
+        position: absolute;
+        left: 1rem;
+        // right: -5rem;
+        top: 3rem;
+        z-index: 99;
+        width: max-content;
+        border-radius: 20px;
+        li {
+          padding: 0.5rem;
+          display: block;
+          &:hover {
+            background: $mayan_color;
+            border-radius: 10px;
+          }
+        }
+      }
     }
   }
+  .dropdown {
+    margin: 0;
+    padding: 0;
+    background: chocolate;
+    border: none;
+  }
+
   @media screen and (max-width: 768px) {
     .navlist {
       flex-direction: column;

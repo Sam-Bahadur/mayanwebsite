@@ -1,0 +1,27 @@
+@import "../common/common.module.scss";
+
+.teamdetails {
+  width: 80ch;
+  margin: 0 auto;
+  .image {
+    margin: 0 auto;
+    width: max-content;
+    img {
+      height: 20vh;
+      border-radius: 30px;
+    }
+  }
+  .name {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: $descbig;
+    span {
+      color: $mayan_color;
+    }
+  }
+  .desc {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: $descbig;
+  }
+}

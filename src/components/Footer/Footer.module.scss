@@ -5,8 +5,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .logo {
-  }
   .extra {
     display: flex;
     .social {
@@ -22,6 +20,7 @@ end_footer {
   display: flex;
   li {
     margin-right: 0.5rem;
+    font-weight: 700;
     list-style: none;
     cursor: pointer;
   }

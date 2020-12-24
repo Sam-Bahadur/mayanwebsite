@@ -23,7 +23,7 @@ testomonial {
       .testomonial_desc {
         font-size: $desc_small;
         // max-height: 220px;
-        height: 220px;
+        // height: 220px;
         // overflow-y: scroll;
         padding-right: 1rem;
         .desc_title {
@@ -72,7 +72,7 @@ testomonial {
           height: 200px;
           object-fit: cover;
           object-position: top;
-          transition: 2s all ease-in-out;
+          transition: 10s all ease-in-out;
           &:hover {
             object-position: bottom;
           }

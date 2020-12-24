@@ -2,8 +2,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React from "react";
-import hero from "../../assets/img/hero_img2.png";
+import hero from "../../assets/img/hero_img.png";
 import style from "./Carousel.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Carousel() {
   const settings = {
@@ -19,16 +20,24 @@ export default function Carousel() {
   return (
     <div className={style.carousel}>
       <Slider {...settings}>
-        <div>
-          <img src={hero} alt="" srcset="" />
+        <div className={style.hero_main}>
+          <div>
+            <img src={hero} alt="" srcset="" />
+          </div>
+          <div>
+            <h4>
+              Mayan is a cutting-edge millennial Media and IT Consulting company
+              founded by young technology enthusiasts of Nepal. At Mayan, our
+              mission is to be your one stop solution for all your media and IT
+              needs while we simultaneously help revolutionize the current
+              landscape of Nepali media and IT industry.
+              <Link to="/about">
+                <button>readmore</button>
+              </Link>
+            </h4>
+          </div>
         </div>
-        <div>
-          <img src={hero} alt="" srcset="" />
-        </div>
-        <div>
-          <img src={hero} alt="" srcset="" />
-        </div>
-        <div>
+        <div className={style.normal_hero}>
           <img src={hero} alt="" srcset="" />
         </div>
       </Slider>

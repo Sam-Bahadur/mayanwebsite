@@ -10,6 +10,8 @@ import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { BsBrush } from "react-icons/bs";
+import videography from "../../assets/img/icons/videography.png";
+import { ImVideoCamera } from "react-icons/im";
 
 export default function Work(props) {
   const [isclicked, setisclicked] = useState(0);
@@ -149,7 +151,17 @@ export default function Work(props) {
         </div>
         <div className={style.work}>
           <div className={style.work_image}>
-            <FaVideo />
+            {/* <FaVideo /> */}
+            <ImVideoCamera />
+            {/* <img
+              src={videography}
+              alt=""
+              srcset=""
+              style={{
+                height: "30px",
+                width: "30px",
+              }}
+            /> */}
           </div>
           <div className={style.work_title}>VideoGraphy</div>
           <div className={style.work_desc}>

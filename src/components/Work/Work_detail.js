@@ -20,7 +20,11 @@ import videography from "../../assets/img/icons/videography.png";
 
 export default function Work_detail(props) {
   useLayoutEffect(() => {
-    window.scrollTo(0, props.history.location.desc * 105);
+    window.scrollTo({
+      left: 0,
+      top: props.history.location.desc * 105,
+      behavior: "smooth",
+    });
     // alert();
   });
   return (

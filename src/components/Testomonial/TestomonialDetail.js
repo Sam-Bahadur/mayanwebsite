@@ -14,6 +14,8 @@ export default function TestomonialDetail() {
           className={style.testomonials}
           style={{
             gridTemplateColumns: "unset",
+            width: "80%",
+            margin: "0 auto",
           }}
         >
           <div className={style.testomonial}>

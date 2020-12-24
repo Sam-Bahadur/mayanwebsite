@@ -6,7 +6,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 import { FiPhoneCall } from "react-icons/fi";
-import { GrMail } from "react-icons/gr";
+import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import Dividor from "../common/Dividor/Dividor";
 
@@ -57,15 +57,21 @@ export default function Header() {
       <header id={"header"}>
         <div className={style.extra_info}>
           <div>
-            <FiPhoneCall />
+            <span>
+              <FiPhoneCall />
+            </span>
             <h2>+977-9841469812, +977-9843663478</h2>
           </div>
           <div>
-            <GrMail />
+            <span>
+              <AiOutlineMail />
+            </span>
             <h2>info@mayanmedia.com.np</h2>
           </div>
           <div>
-            <GoLocation />
+            <span>
+              <GoLocation />
+            </span>
             <h2>Anamnagar, Kathmandu</h2>
           </div>
         </div>

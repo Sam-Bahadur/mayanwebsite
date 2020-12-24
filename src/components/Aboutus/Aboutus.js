@@ -42,7 +42,7 @@ export default function Aboutus() {
           </p>
           <p>
             The world is heading towards a digital era and we at Mayan promise
-            to be your ally for transitioning into this new era!
+            to be your ally for transitioning into this new age.
           </p>
         </div>
       </aboutus>

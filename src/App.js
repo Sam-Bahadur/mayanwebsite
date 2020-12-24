@@ -13,6 +13,8 @@ import Aboutus from "./components/Aboutus/Aboutus";
 import Upbtn from "./components/common/Upbtn/Upbtn";
 import Testomonial from "./components/Testomonial/Testomonial";
 import TestomonialDetail from "./components/Testomonial/TestomonialDetail";
+import TeamDetail from "./components/Team/TeamDetail";
+// import Fade from "react-reveal/Fade";
 
 function UnderConstruction() {
   return (
@@ -32,7 +34,9 @@ function App() {
     <>
       <body>
         <HashRouter>
+          {/* <Fade top> */}
           <Header />
+          {/* </Fade> */}
           {window.innerWidth > 768 ? <Upbtn /> : null}
           <div className={style.body}>
             <Switch>
@@ -41,6 +45,7 @@ function App() {
               <Route exact path="/projects" component={TestomonialDetail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={Aboutus} />
+              <Route exact path="/team/:name" component={TeamDetail} />
               <Route exact path="/" component={Home} />
               <Route exact component={UnderConstruction} />
             </Switch>
