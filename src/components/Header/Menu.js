@@ -41,7 +41,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 5,
+              desc: 2,
             }}
           >
             Software Development
@@ -51,7 +51,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 7,
+              desc: 3,
             }}
           >
             Mobile App development
@@ -61,7 +61,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 10,
+              desc: 4,
             }}
           >
             Graphic Designing
@@ -71,7 +71,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 20,
+              desc: 5,
             }}
           >
             Social Media Marketing
@@ -81,7 +81,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 25,
+              desc: 6,
             }}
           >
             VideoGraphy
@@ -91,7 +91,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 30,
+              desc: 7,
             }}
           >
             Photography
@@ -101,7 +101,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 35,
+              desc: 8,
             }}
           >
             SEO & Website maintenance
@@ -111,7 +111,7 @@ export default function Menu(props) {
           <Link
             to={{
               pathname: "/services",
-              desc: 40,
+              desc: 9,
             }}
           >
             E-commerce systems

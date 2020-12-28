@@ -3,18 +3,27 @@
 .carousel {
   margin: 2rem 0rem;
   .hero_main {
-    position: relative;
+    // position: relative;
     display: flex !important;
     // height: 80vh;
-    div {
-      flex: 1 1 50%;
+    .image{
+      flex: 1 1 70%;
+      img {
+        width: 100%;
+        // height: 50vh;
+        object-fit: cover;
+      }
+    }
+    .text{
+      flex: 1 1 30%;
+      width: 100%;
       h4 {
-        width: 50%;
-        position: absolute;
-        right: 0;
+        // position: absolute;
+        // right: 0;
         text-align: center;
         button {
-          padding: 0.3rem 1rem;
+          position: relative;
+          padding: 0.5rem 4rem .5rem 2rem  ;
           display: block;
           width: min-content;
           margin: 0 auto;
@@ -22,6 +31,7 @@
           background: $mayan_color;
           border-radius: 5px;
           color: white;
+          font-size: 2rem;
           font-weight: 700;
           border: none;
           cursor: pointer;
@@ -29,22 +39,27 @@
           &:hover {
             transform: scale(1.05);
           }
+          &::after{
+            content: "→";
+            height: 3.25rem;
+            width: 3.25rem;
+            position: absolute;
+            background: teal;
+            bottom: 0;
+            right: 0;
+            border-radius: 5px;
+          }
         }
       }
-      img {
-        // width: 100%;
-        height: 50vh;
-        object-fit: fill;
-      }
     }
   }
-  .normal_hero {
-    img {
-      height: 50vh;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+  // .normal_hero {
+  //   img {
+  //     height: 50vh;
+  //     width: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
 }
 
 @media screen and (max-width: 768px) {

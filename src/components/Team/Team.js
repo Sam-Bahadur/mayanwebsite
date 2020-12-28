@@ -29,13 +29,13 @@ export default function Team(props) {
             />
           <TeamSingle
             name={"Yuyutsu Karki"}
-            phone={"+977-9843663478"}
+            phone={"+977-9843663478, 9818570300"}
             post={"Marketing and SEO"}
-            email={"yuyutsucarkey@gmail.com"}
+            email={"yuyutsukarki@gmail.com, yuyutsu@mayanmedia.com.np"}
             key={3}
             image={yuyutsu}
             desc={
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia. Voluptate ex ipsam eum voluptas, quos officia odio dolores sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident culpa accusantium velit minima consequuntur, quo ad omnis, sequi porro, eligendi mollitia voluptas ipsum voluptatibus repellendus vero unde! Sapiente officia minus ratione, at corporis eveniet voluptas necessitatibus velit ut? Praesentium vitae est sunt enim repellendus! Sint eius voluptatem, quo eligendi libero magni modi rem ratione provident distinctio quia aliquid facilis officiis ipsam voluptatibus suscipit expedita quaerat aperiam repudiandae vero est quasi quidem! Ut sequi quisquam at, exercitationem nam nulla, nisi corporis, numquam asperiores dolores officiis natus quae! Enim voluptatum nostrum quod similique suscipit, consequatur iusto voluptatibus quaerat exercitationem, veritatis nulla!"
+              "Yuyutshu graduated as a Mechanical Engineer from Kathmandu University. He is an engineer who actively seeks challenges and is keen on creating opportunities from them. Karki believes that Nepal’s geo-political location, sandwiched between India and China, is a strategic challenge but also has the potential to provide ample opportunities for the country. Thus, Nepali entities must upgrade themselves and become technologically equipped to seize up-coming opportunities. He believes this is where Mayan steps in as Mayan has dedicated itself to revolutionize the Media and IT sector of Nepal. A people’s person with an eye for atypical talent; Karki is the reason behind the growing dynamic team of Mayan. "
             }
             />
           <TeamSingle

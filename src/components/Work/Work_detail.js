@@ -19,19 +19,31 @@ import software from "../../assets/img/icons/software.png";
 import videography from "../../assets/img/icons/Videography.jpg";
 import photography from "../../assets/img/icons/Photography.png";
 import Social from "../../assets/img/icons/Social.jpg";
+import { animateScroll as scroll} from "react-scroll"
+var Scroll   = require('react-scroll');
+var Element  = Scroll.Element;
+var scroller = Scroll.scroller;
 
 export default function Work_detail(props) {
   useLayoutEffect(() => {
-    window.scrollTo({
-      left: 0,
-      top: props.history.location.desc * 115,
-      behavior: "smooth",
-    });
+    // window.scrollTo({
+    //   left: 0,
+    //   top: props.history.location.desc * 115,
+    //   behavior: "smooth",
+    // });
     // alert();
+    scroller.scrollTo(`${props.history.location.desc}`, {
+      // duration: 1500,
+      // delay: 100,
+      smooth: true,
+      // containerId: 'ContainerElementID',
+      offset: -50, 
+    })
   });
   return (
     <Container>
       <works>
+        <Element name="1">
         <div
           id="1"
           className={style.work}
@@ -76,6 +88,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="2">
         <div
           className={style.work}
           style={{
@@ -105,6 +119,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="3">
         <div
           className={style.work}
           style={{
@@ -148,6 +164,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="4">
         <div
           className={style.work}
           style={{
@@ -160,7 +178,7 @@ export default function Work_detail(props) {
             {/* <FaCode /> */}
             <img src={graphicdesign} alt="" />
           </div>
-          <div className={style.work_title}>Graphic Designing</div>
+          <div id="graphicdesign" className={style.work_title}>Graphic Designing</div>
           <div
             className={style.work_desc}
             style={{ width: "100%", height: "min-content" }}
@@ -185,6 +203,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="5">
         <div
           className={style.work}
           style={{
@@ -225,6 +245,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="6">
         <div
           className={style.work}
           style={{
@@ -257,6 +279,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="7">
         <div
           className={style.work}
           style={{
@@ -290,6 +314,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="8">
         <div
           className={style.work}
           style={{
@@ -325,6 +351,8 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
+        <Element name="9">
         <div
           className={style.work}
           style={{
@@ -370,6 +398,7 @@ export default function Work_detail(props) {
             </p>
           </div>
         </div>
+        </Element>
       </works>
     </Container>
   );

@@ -62,20 +62,18 @@ header {
       cursor: pointer;
       position: relative;
       .services {
-        padding: 1rem;
-        font-size: 1.5rem;
-        // background: grey;
+        padding: .5rem .2rem;
+        font-size: 1rem;
         background: $background_secondary;
         list-style: none;
         position: absolute;
         left: 1rem;
-        // right: -5rem;
         top: 3rem;
         z-index: 99;
         width: max-content;
-        border-radius: 20px;
+        border-radius: 10px;
         li {
-          padding: 0.5rem;
+          padding: 0.3rem;
           display: block;
           &:hover {
             background: $mayan_color;

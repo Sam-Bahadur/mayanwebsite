@@ -1,8 +1,18 @@
+@import "../common/common.module.scss";
+
 aboutus {
   .para {
     font-size: 1.2rem;
     text-align: center;
-    // width: 80ch;
+    width: 80ch;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  aboutus{
+    .para{
+      width: 100%;
+    }
   }
 }

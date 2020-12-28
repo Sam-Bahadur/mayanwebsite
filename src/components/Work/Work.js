@@ -12,9 +12,13 @@ import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { BsBrush } from "react-icons/bs";
 // import videography from "../../assets/img/icons/videography.png";
 import { ImVideoCamera } from "react-icons/im";
+import {Link as ScrollLink} from "react-scroll"
+import { useHistory } from "react-router-dom";
+
 
 export default function Work(props) {
   const [isclicked, setisclicked] = useState(0);
+  let history = useHistory();
   return (
     <Container>
       <works>
@@ -63,7 +67,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 5,
+                desc: 2,
               }}
             >
               Read More
@@ -92,7 +96,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 7,
+                desc: 3,
               }}
             >
               Read More
@@ -113,15 +117,15 @@ export default function Work(props) {
             </p>
           </div>
           <div className={style.readmore}>
-            <Link
+            <ScrollLink
               to={{
                 pathname: "/services",
-                desc: 10,
+                desc: 4,
               }}
             >
               Read More
               <span>→</span>
-            </Link>
+            </ScrollLink>
           </div>
         </div>
         <div className={style.work}>
@@ -141,7 +145,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 20,
+                desc: 5,
               }}
             >
               Read More
@@ -177,7 +181,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 25,
+                desc: 6,
               }}
             >
               Read More
@@ -203,7 +207,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 30,
+                desc: 7,
               }}
             >
               Read More
@@ -230,7 +234,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 35,
+                desc: 8,
               }}
             >
               Read More
@@ -257,7 +261,7 @@ export default function Work(props) {
             <Link
               to={{
                 pathname: "/services",
-                desc: 40,
+                desc: 9,
               }}
             >
               Read More
