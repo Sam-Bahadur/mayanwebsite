@@ -73,12 +73,21 @@ header {
         width: max-content;
         border-radius: 10px;
         li {
-          padding: 0.3rem;
+          padding: 0rem .5rem;
           display: block;
-          &:hover {
-            background: $mayan_color;
-            border-radius: 10px;
-          }
+          font-size: 1rem;
+          font-weight: 300;
+          position: relative;
+          transition: .3s all ease-in-out;
+            &:hover::after{
+              content: "";
+              height: 2px;
+              left: 0;
+              width: 100%;
+              position: absolute;
+              bottom: -0.1rem;
+              background: $mayan_color;
+            }
         }
       }
     }

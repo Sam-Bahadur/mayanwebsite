@@ -31,7 +31,7 @@ export default function Team(props) {
             name={"Yuyutsu Karki"}
             phone={"+977-9843663478, 9818570300"}
             post={"Marketing and SEO"}
-            email={"yuyutsukarki@gmail.com, yuyutsu@mayanmedia.com.np"}
+            email={"yuyutsu@mayanmedia.com.np"}
             key={3}
             image={yuyutsu}
             desc={
@@ -80,7 +80,7 @@ export default function Team(props) {
             git={"https://github.com/Sam-Bahadur"}
             image={anish}
             desc={
-              " dolor, sit amet consectetur adipisicing elit. Quas, mollitia. Voluptate ex ipsam eum voluptas, quos officia odio dolores sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident culpa accusantium velit minima consequuntur, quo ad omnis, sequi porro, eligendi mollitia voluptas ipsum voluptatibus repellendus vero unde! Sapiente officia minus ratione, at corporis eveniet voluptas necessitatibus velit ut? Praesentium vitae est sunt enim repellendus! Sint eius voluptatem, quo eligendi libero magni modi rem ratione provident distinctio quia aliquid facilis officiis ipsam voluptatibus suscipit expedita quaerat aperiam repudiandae vero est quasi quidem! Ut sequi quisquam at, exercitationem nam nulla, nisi corporis, numquam asperiores dolores officiis natus quae! Enim voluptatum nostrum quod similique suscipit, consequatur iusto voluptatibus quaerat exercitationem, veritatis nulla!"
+              "Anish is a graduate in Electrical and Electronics Engineering from Pokhara University. He is currently a co-founder at Mayan Media and looks after Digital marketing and BPO’s. "
             }
           />
         </div>

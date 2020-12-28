@@ -5,19 +5,15 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Work_detail from "./components/Work/Work_detail";
-import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import construction from "./assets/img/construction.png";
 import { Container } from "@material-ui/core";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Upbtn from "./components/common/Upbtn/Upbtn";
-import Testomonial from "./components/Testomonial/Testomonial";
 import TestomonialDetail from "./components/Testomonial/TestomonialDetail";
 import TeamDetail from "./components/Team/TeamDetail";
-import Fade from "react-reveal/Fade"
-import Website from "./components/Projects/Websites/Website";
 import Multimedia from "./components/Projects/Multimedia/Multimedia"
-import Zoom from "react-reveal/Zoom"
+import Graphic from "./components/Projects/Graphic/Graphic"
 
 function UnderConstruction() {
   return (
@@ -48,6 +44,7 @@ function App() {
               <Route exact path="/about" component={Aboutus} />
               <Route exact path="/projects/websites" component={TestomonialDetail} />
               <Route exact path="/projects/multimedia" component={Multimedia} />
+              <Route exact path="/projects/graphics" component={Graphic} />
               <Route exact path="/team/:name" component={TeamDetail} />
               <Route exact path="/" component={Home} />
               <Route exact component={UnderConstruction} />

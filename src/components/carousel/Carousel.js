@@ -33,7 +33,7 @@ export default function Carousel() {
               needs while we simultaneously help revolutionize the current
               landscape of Nepali media and IT industry.
               <Link to="/about">
-                <button>readmore
+                <button>Read More
                 </button>
               </Link>
             </h4>

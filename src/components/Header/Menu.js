@@ -3,7 +3,6 @@ import style from "./Header.module.scss";
 import Logo from "./../common/logo/Logo";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Link as ScrollLink } from "react-scroll";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
@@ -11,15 +10,16 @@ import { MdExpandMore, MdExpandLess } from "react-icons/md";
 export default function Menu(props) {
   const [mouseOverServices, setmouseOverServices] = useState(false);
   const [mouseOverProjects, setmouseOverProjects] = useState(false);
+
   let history = useHistory();
-  const workClicked = () => {
-    history.push("/");
-  };
+  // const workClicked = () => {
+  //   history.push("/");
+  // };
   const projects = (
     <div className={style.services}>
       <li><Link to={{ pathname: "/projects/websites" }}>Website</Link></li>
       <li>
-        <Link to={{ pathname: "/projects" }}>Graphic Designing</Link>
+        <Link to={{ pathname: "/projects/graphics" }}>Graphic Designing</Link>
       </li>
       <li><Link to={{ pathname: "/projects/multimedia" }}>Multimedia</Link></li>
     </div>
@@ -148,7 +148,6 @@ export default function Menu(props) {
             Services {mouseOverServices ? <MdExpandLess /> : <MdExpandMore />}
             {mouseOverServices
               ? services
-                // null
               : null}
           </Link>
         </div>

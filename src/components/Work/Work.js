@@ -10,7 +10,6 @@ import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { BsBrush } from "react-icons/bs";
-// import videography from "../../assets/img/icons/videography.png";
 import { ImVideoCamera } from "react-icons/im";
 import {Link as ScrollLink} from "react-scroll"
 import { useHistory } from "react-router-dom";
@@ -167,7 +166,7 @@ export default function Work(props) {
               }}
             /> */}
           </div>
-          <div className={style.work_title}>VideoGraphy</div>
+          <div className={style.work_title}>Videography</div>
           <div className={style.work_desc}>
             <p>
               Stories that can be seen have a bigger impact on a person compared

@@ -1,15 +1,6 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect,useEffect } from "react";
 import { Container } from "@material-ui/core";
 import style from "./Work.module.scss";
-import { BiCodeAlt } from "react-icons/bi";
-import { DiCodeigniter } from "react-icons/di";
-import { AiOutlineMobile } from "react-icons/ai";
-import { FaVideo, FaWrench, FaCode } from "react-icons/fa";
-import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
-import { Link } from "react-router-dom";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { BsBrush } from "react-icons/bs";
-import { SiVisualstudiocode } from "react-icons/si";
 import webdesign from "../../assets/img/icons/webdesign.png";
 import ecommerce from "../../assets/img/icons/ecommerce.png";
 import graphicdesign from "../../assets/img/icons/graphicdesign.png";
@@ -19,27 +10,37 @@ import software from "../../assets/img/icons/software.png";
 import videography from "../../assets/img/icons/Videography.jpg";
 import photography from "../../assets/img/icons/Photography.png";
 import Social from "../../assets/img/icons/Social.jpg";
-import { animateScroll as scroll} from "react-scroll"
+
+
 var Scroll   = require('react-scroll');
 var Element  = Scroll.Element;
 var scroller = Scroll.scroller;
 
 export default function Work_detail(props) {
-  useLayoutEffect(() => {
-    // window.scrollTo({
-    //   left: 0,
-    //   top: props.history.location.desc * 115,
-    //   behavior: "smooth",
-    // });
-    // alert();
+  // useLayoutEffect(() => {
+  //   // window.scrollTo({
+  //   //   left: 0,
+  //   //   top: props.history.location.desc * 115,
+  //   //   behavior: "smooth",
+  //   // });
+  //   // alert();
+  //   scroller.scrollTo(`${props.history.location.desc}`, {
+  //     // duration: 1500,
+  //     // delay: 100,
+  //     smooth: true,
+  //     // containerId: 'ContainerElementID',
+  //     offset: -50, 
+  //   })
+  // });
+  useEffect(() => {
     scroller.scrollTo(`${props.history.location.desc}`, {
-      // duration: 1500,
-      // delay: 100,
       smooth: true,
-      // containerId: 'ContainerElementID',
       offset: -50, 
     })
-  });
+    return () => {
+      props.history.location.desc = null;
+    }
+  }, [props.history.location.desc])
   return (
     <Container>
       <works>
