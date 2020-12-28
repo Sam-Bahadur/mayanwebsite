@@ -14,7 +14,10 @@ import Upbtn from "./components/common/Upbtn/Upbtn";
 import Testomonial from "./components/Testomonial/Testomonial";
 import TestomonialDetail from "./components/Testomonial/TestomonialDetail";
 import TeamDetail from "./components/Team/TeamDetail";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade"
+import Website from "./components/Projects/Websites/Website";
+import Multimedia from "./components/Projects/Multimedia/Multimedia"
+import Zoom from "react-reveal/Zoom"
 
 function UnderConstruction() {
   return (
@@ -40,11 +43,11 @@ function App() {
           {window.innerWidth > 768 ? <Upbtn /> : null}
           <div className={style.body}>
             <Switch>
-              {/* <Route exact path="/work" component={() => <Work_detail desc={} />} /> */}
               <Route exact path="/services" component={Work_detail} />
-              <Route exact path="/projects" component={TestomonialDetail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={Aboutus} />
+              <Route exact path="/projects/websites" component={TestomonialDetail} />
+              <Route exact path="/projects/multimedia" component={Multimedia} />
               <Route exact path="/team/:name" component={TeamDetail} />
               <Route exact path="/" component={Home} />
               <Route exact component={UnderConstruction} />

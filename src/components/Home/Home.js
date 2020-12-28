@@ -10,22 +10,22 @@ import Zoom from "react-reveal/Zoom";
 export default function Home() {
   return (
     <>
-      {/* <Zoom> */}
+      <Zoom>
       <Hero />
-      {/* </Zoom> */}
+      </Zoom>
       {/* <Slogan /> */}
-      {/* <Zoom> */}
+      <Zoom>
       <Work />
-      {/* </Zoom> */}
-      {/* <Zoom> */}
+      </Zoom>
+      <Zoom>
       <Testomonial />
-      {/* </Zoom> */}
-      {/* <Zoom> */}
+      </Zoom>
+      <Zoom>
       <Team />
-      {/* </Zoom> */}
-      {/* <Zoom> */}
+      </Zoom>
+      <Zoom>
       <Contact />
-      {/* </Zoom> */}
+      </Zoom>
     </>
   );
 }

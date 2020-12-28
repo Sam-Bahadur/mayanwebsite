@@ -14,15 +14,17 @@ import webdesign from "../../assets/img/icons/webdesign.png";
 import ecommerce from "../../assets/img/icons/ecommerce.png";
 import graphicdesign from "../../assets/img/icons/graphicdesign.png";
 import mobileapp from "../../assets/img/icons/mobileapp.png";
-import SEO from "../../assets/img/icons/SEO.png";
+import SEO from "../../assets/img/icons/SEO.jpg";
 import software from "../../assets/img/icons/software.png";
-import videography from "../../assets/img/icons/videography.png";
+import videography from "../../assets/img/icons/Videography.jpg";
+import photography from "../../assets/img/icons/Photography.png";
+import Social from "../../assets/img/icons/Social.jpg";
 
 export default function Work_detail(props) {
   useLayoutEffect(() => {
     window.scrollTo({
       left: 0,
-      top: props.history.location.desc * 105,
+      top: props.history.location.desc * 115,
       behavior: "smooth",
     });
     // alert();
@@ -193,7 +195,7 @@ export default function Work_detail(props) {
         >
           <div className={style.work_detail_image}>
             {/* <FaCode /> */}
-            <img src={webdesign} alt="" />
+            <img src={Social} alt="" />
           </div>
           <div className={style.work_title}>Social Media Marketing</div>
           <div
@@ -265,7 +267,7 @@ export default function Work_detail(props) {
         >
           <div className={style.work_detail_image}>
             {/* <FaCode /> */}
-            <img src={webdesign} alt="" />
+            <img src={photography} alt="" />
           </div>
           <div className={style.work_title}>Photography</div>
           <div

@@ -17,11 +17,11 @@ export default function Menu(props) {
   };
   const projects = (
     <div className={style.services}>
-      <li>{/* <Link to={{ pathname: "/projects" }}>Website</Link> */}</li>
+      <li><Link to={{ pathname: "/projects/websites" }}>Website</Link></li>
       <li>
-        {/* <Link to={{ pathname: "/projects" }}>Graphic Designing</Link> */}
+        <Link to={{ pathname: "/projects" }}>Graphic Designing</Link>
       </li>
-      <li>{/* <Link to={{ pathname: "/projects" }}>Multimedia</Link> */}</li>
+      <li><Link to={{ pathname: "/projects/multimedia" }}>Multimedia</Link></li>
     </div>
   );
   const services = (
@@ -147,8 +147,8 @@ export default function Menu(props) {
           >
             Services {mouseOverServices ? <MdExpandLess /> : <MdExpandMore />}
             {mouseOverServices
-              ? //services
-                null
+              ? services
+                // null
               : null}
           </Link>
         </div>

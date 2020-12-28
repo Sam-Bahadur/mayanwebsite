@@ -10,7 +10,7 @@ import { GiPhotoCamera, GiMoneyStack, GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { BsBrush } from "react-icons/bs";
-import videography from "../../assets/img/icons/videography.png";
+// import videography from "../../assets/img/icons/videography.png";
 import { ImVideoCamera } from "react-icons/im";
 
 export default function Work(props) {

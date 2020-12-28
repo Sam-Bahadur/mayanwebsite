@@ -60,7 +60,7 @@ export default function Header() {
             <span>
               <FiPhoneCall />
             </span>
-            <h2>+977-9841469812, +977-9843663478</h2>
+            <h2>9841469812, 9843663478</h2>
           </div>
           <div>
             <span>
