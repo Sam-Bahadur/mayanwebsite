@@ -81,7 +81,7 @@ header {
           transition: .3s all ease-in-out;
             &:hover::after{
               content: "";
-              height: 2px;
+              height: 1px;
               left: 0;
               width: 100%;
               position: absolute;

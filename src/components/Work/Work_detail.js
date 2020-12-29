@@ -37,10 +37,10 @@ export default function Work_detail(props) {
       smooth: true,
       offset: -50, 
     })
-    return () => {
-      props.history.location.desc = null;
-    }
-  }, [props.history.location.desc])
+    return () => 
+      window.location.href;
+    
+  }, [window.location.href])
   return (
     <Container>
       <works>

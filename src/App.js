@@ -39,6 +39,7 @@ function App() {
           {window.innerWidth > 768 ? <Upbtn /> : null}
           <div className={style.body}>
             <Switch>
+              <Route exact path="/services/:name" component={(props) => <Work_detail  {...props} key={window.location.href}/> } />
               <Route exact path="/services" component={Work_detail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={Aboutus} />

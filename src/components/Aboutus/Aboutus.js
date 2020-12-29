@@ -8,6 +8,7 @@ export default function Aboutus() {
   });
   return (
     <Container>
+      {console.log(window.location.href)}
       <aboutus>
         <div className={style.para}>
           <p>

@@ -1,0 +1,15 @@
+@import "../../common/common.module.scss";
+
+.header{
+    text-align: center;
+    font-size: $headerbig;
+    margin: 1rem auto;
+}
+.graphic{
+    img{
+        transition: .1s ease-in-out all;
+        &:hover{
+            transform: scale(.99);
+        }
+    }
+}

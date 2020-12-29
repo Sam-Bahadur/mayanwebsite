@@ -30,7 +30,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: `/services/1`,
               desc: 1,
             }}
           >
@@ -40,7 +40,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/2",
               desc: 2,
             }}
           >
@@ -50,7 +50,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/3",
               desc: 3,
             }}
           >
@@ -60,7 +60,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/4",
               desc: 4,
             }}
           >
@@ -70,7 +70,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/5",
               desc: 5,
             }}
           >
@@ -80,7 +80,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/6",
               desc: 6,
             }}
           >
@@ -90,7 +90,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/7",
               desc: 7,
             }}
           >
@@ -100,7 +100,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/8",
               desc: 8,
             }}
           >
@@ -110,7 +110,7 @@ export default function Menu(props) {
         <li>
           <Link
             to={{
-              pathname: "/services",
+              pathname: "/services/9",
               desc: 9,
             }}
           >
@@ -122,7 +122,9 @@ export default function Menu(props) {
   );
   return (
     <div className={style.appbar}>
+      <Link to ="/">
       <Logo />
+      </Link>
       <div className={style.navlist}>
         <div className={style.nav_item}>
           <Link
