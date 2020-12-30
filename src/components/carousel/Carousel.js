@@ -5,7 +5,6 @@ import React from "react";
 import hero from "../../assets/img/hero_img.png";
 import style from "./Carousel.module.scss";
 import { Link } from "react-router-dom";
-import {BiRightArrowAlt} from "react-icons/bi"
 
 export default function Carousel() {
   const settings = {
@@ -32,11 +31,11 @@ export default function Carousel() {
               mission is to be your one stop solution for all your media and IT
               needs while we simultaneously help revolutionize the current
               landscape of Nepali media and IT industry.
+            </h4>
               <Link to="/about">
                 <button>Read More
                 </button>
               </Link>
-            </h4>
           </div>
         </div>
         {/* <div className={style.normal_hero}>

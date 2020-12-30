@@ -16,7 +16,7 @@ export default function Home() {
       <Work />
       </Zoom>
       <Zoom>
-      <Testomonial />
+      <Testomonial heading={"Our Work"}/>
       </Zoom>
       <Zoom>
       <Team />

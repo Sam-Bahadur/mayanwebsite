@@ -5,9 +5,10 @@ import scroll3 from "../../assets/img/pages/full_page3.png";
 import Work_image from "./../Work/Work_image";
 import style from "./Testomonial.module.scss";
 
-export default function TestomonialDetail() {
+export default function TestomonialDetail(props) {
   return (
     <Container>
+      <h1>{props.heading}</h1>
       <testomonial>
         {" "}
         <div

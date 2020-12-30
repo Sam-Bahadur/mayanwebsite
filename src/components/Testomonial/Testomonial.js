@@ -2,15 +2,14 @@ import React from "react";
 import style from "./Testomonial.module.scss";
 import { Container } from "@material-ui/core";
 import Work_image from "./../Work/Work_image";
-import scroll1 from "../../assets/img/pages/full_page1.png";
 import scroll2 from "../../assets/img/pages/full_page2.png";
 import scroll3 from "../../assets/img/pages/full_page3.png";
 
-export default function Testomonial() {
+export default function Testomonial(props) {
   return (
     <Container>
       <testomonial id="work">
-        <div className={style.header}>Our Works</div>
+        <div className={style.header}>{props.heading}</div>
         <div className={style.testomonials}>
           <div className={style.testomonial}>
             <Work_image link={"http://www.sharmilakarki.com"} image={scroll2} />

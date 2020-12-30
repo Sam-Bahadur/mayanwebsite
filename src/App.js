@@ -14,6 +14,7 @@ import TestomonialDetail from "./components/Testomonial/TestomonialDetail";
 import TeamDetail from "./components/Team/TeamDetail";
 import Multimedia from "./components/Projects/Multimedia/Multimedia"
 import Graphic from "./components/Projects/Graphic/Graphic"
+import Projects from "./components/Projects/Projects";
 
 function UnderConstruction() {
   return (
@@ -43,9 +44,10 @@ function App() {
               <Route exact path="/services" component={Work_detail} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/about" component={Aboutus} />
-              <Route exact path="/projects/websites" component={TestomonialDetail} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/projects/websites" component={(props) => <TestomonialDetail heading={"Our Works"}/>} />
               <Route exact path="/projects/multimedia" component={Multimedia} />
-              <Route exact path="/projects/graphics" component={Graphic} />
+              <Route exact path="/projects/graphics" component={(props)=> < Graphic />} />
               <Route exact path="/team/:name" component={TeamDetail} />
               <Route exact path="/" component={Home} />
               <Route exact component={UnderConstruction} />

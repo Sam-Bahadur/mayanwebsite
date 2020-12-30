@@ -7,7 +7,7 @@ import yuyutsu from "../../assets/img/members/yuyutsu.jpg";
 import aabhushan from "../../assets/img/members/aabhushan.jpg";
 import bhibhushan from "../../assets/img/members/bhibhushan.jpg";
 import anish from "../../assets/img/members/anish.jpg";
-import Zoom from "react-reveal/Zoom"
+// import Zoom from "react-reveal/Zoom"
 
 export default function Team(props) {
   return (
