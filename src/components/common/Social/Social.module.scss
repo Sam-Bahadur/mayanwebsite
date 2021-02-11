@@ -1,0 +1,11 @@
+@import "../common.module.scss";
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    .social {
+      font-size: $desc;
+      color: $mayan_color;
+      padding: 0.5rem;
+    }
+  }

@@ -1,19 +1,24 @@
 @import "../common/common.module.scss";
 header {
-  position: relative;
+  // position: relative;
   padding: 0.5rem 0rem;
   .extra_info {
     color: aliceblue;
     font-size: medium;
     // padding: 0.5rem;
     display: flex;
-    width: fit-content;
     margin: 0 auto;
+    width: fit-content;
     div {
       margin: 0 1rem;
       color: $mayan_color;
       padding: 0 1rem;
       position: relative;
+      align-self: center;
+      a{
+        padding: 0 0.5rem;
+        font-size: 1rem;
+      }
       h2 {
         margin-left: 1rem;
         display: inline;
@@ -28,7 +33,6 @@ header {
         right: 0;
         top: 0.2rem;
       }
-      position: relative;
       span {
         position: absolute;
         left: 0.5rem;

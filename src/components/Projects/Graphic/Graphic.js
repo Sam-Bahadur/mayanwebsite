@@ -4,19 +4,31 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
 import style from "./Graphic.module.scss"
 import jagaran1 from "../../../assets/img/graphicdesign/jagaran/banner1.jpg"
-import jagaran2 from "../../../assets/img/graphicdesign/jagaran/banner2.jpg"
+import jagaran2 from "../../../assets/img/graphicdesign/jagaran/banner2.png"
+import jagaran3 from "../../../assets/img/graphicdesign/jagaran/banner3.png"
+import jagaran4 from "../../../assets/img/graphicdesign/jagaran/banner4.jpg"
 
 export default function Graphic() {
     const jagaran = [
         {
           src: jagaran1,
-          width: 10,
-          height: 5
+          width: 8,
+          height: 3
         },
         {
           src: jagaran2,
-          width: 10,
-          height: 5
+          width: 8,
+          height: 3
+        },
+        {
+          src: jagaran3,
+          width: 8,
+          height: 3
+        },
+        {
+          src: jagaran4,
+          width: 8,
+          height: 3
         },
       ];
     const [currentImage, setCurrentImage] = useState(0);

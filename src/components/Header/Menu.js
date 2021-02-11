@@ -84,7 +84,7 @@ export default function Menu(props) {
               desc: 6,
             }}
           >
-            VideoGraphy
+            Videography
           </Link>
         </li>
         <li>

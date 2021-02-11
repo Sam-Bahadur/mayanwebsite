@@ -9,6 +9,8 @@ import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import Dividor from "../common/Dividor/Dividor";
+import Social from "../common/Social/Social";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const theme = createMuiTheme({
   palette: {
@@ -73,6 +75,17 @@ export default function Header() {
               <GoLocation />
             </span>
             <h2>Anamnagar, Kathmandu</h2>
+          </div>
+          <div>
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/mayanmedianepal/">
+              <FaFacebookF />
+            </a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mayanmedianepal/">
+              <FaInstagram />
+            </a>
+          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCmPTP4ZPUiHcbIQy3k5e-Pw">
+              <FaYoutube />
+            </a>
           </div>
         </div>
         <Dividor />

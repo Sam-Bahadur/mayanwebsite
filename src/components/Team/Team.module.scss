@@ -92,6 +92,7 @@ team {
 }
 
 .mouseover_member {
+  margin-top: 1rem;
   padding-bottom: 2rem;
   background: $background_secondary;
   .info {
@@ -114,4 +115,11 @@ team {
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .mouseover_member {
+    margin-top: 5rem;
+  }  
+  
 }
