@@ -1,0 +1,17 @@
+@import "../common/common.module.scss";
+
+table {
+  width: max-content;
+  margin: 0 auto;
+  border: 2px solid white;
+  th {
+    border-bottom: 2px solid white;
+  }
+  tr {
+    // margin-top: 2rem;
+    td {
+      border-bottom: 2px solid white;
+      margin: 2rem;
+    }
+  }
+}
