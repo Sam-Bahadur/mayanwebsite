@@ -79,12 +79,10 @@ function App() {
               className="element"
               type="text"
               name="name"
-              required
               value={name}
-              onChange={onchange}
+              onChange={onChange}
               placeholder="Name"
             />
-
             <input
               required
               className="element"
@@ -113,7 +111,7 @@ function App() {
               onChange={onChange}
               placeholder="Address"
             />
-            <input
+            <textarea
               required
               id="expectation"
               className="element"
@@ -123,7 +121,7 @@ function App() {
               value={expectation}
               onChange={onChange}
             />
-            <input
+            <textarea
               required
               id="knowus"
               className="element"
