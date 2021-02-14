@@ -17,6 +17,7 @@ import Graphic from "./components/Projects/Graphic/Graphic";
 import Projects from "./components/Projects/Projects";
 import { ImCross } from "react-icons/im";
 import Applicants from "./components/Applicants/Applicants";
+import Axios from "axios";
 
 function UnderConstruction() {
   return (
@@ -40,25 +41,28 @@ function App() {
   const [popup, setPopup] = useState(true);
 
   const [formData, setFormData] = useState({
-    name: "",
+    first_name: "",
+    middle_name: "",
+    last_name: "",
     email: "",
-    phone: "",
+    contact: "",
     address: "",
     expectation: "",
-    knowus: "",
-    duration: "",
+    recognition_source: "",
+    course_duration_feasibility: "",
   });
 
   const {
-    name,
+    first_name,
+    middle_name,
+    last_name,
     email,
-    phone,
+    contact,
     address,
     expectation,
-    knowus,
-    duration,
+    recognition_source,
+    course_duration_feasibility,
   } = formData;
-
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -71,18 +75,34 @@ function App() {
             <div className={style.cross} onClick={() => setPopup(false)}>
               <ImCross />
             </div>
-
             <h1>
               Register for our course <span>{/* <FiMail /> */}</span>
             </h1>
+            <label>First Name</label>
             <input
               className="element"
               type="text"
-              name="name"
-              value={name}
+              name="first_name"
+              value={first_name}
               onChange={onChange}
-              placeholder="Name"
             />
+            <label>Middle Name</label>
+            <input
+              className="element"
+              type="text"
+              name="middle_name"
+              value={middle_name}
+              onChange={onChange}
+            />
+            <label>Last Name</label>
+            <input
+              className="element"
+              type="text"
+              name="last_name"
+              value={last_name}
+              onChange={onChange}
+            />
+            <label>Email</label>
             <input
               required
               className="element"
@@ -90,18 +110,18 @@ function App() {
               name="email"
               value={email}
               onChange={onChange}
-              placeholder="Email Address"
             />
+            <label>contact Number</label>
             <input
               required
               id="contactno"
               className="element"
               type="text"
-              name="phone"
-              placeholder="Contact Number"
-              value={phone}
+              name="contact"
+              value={contact}
               onChange={onChange}
             />
+            <label>Address</label>
             <input
               required
               className="element"
@@ -109,39 +129,37 @@ function App() {
               name="address"
               value={address}
               onChange={onChange}
-              placeholder="Address"
             />
+            <label>Expectation from the course</label>
             <textarea
               required
               id="expectation"
               className="element"
               name="expectation"
               type="text"
-              placeholder="Expectation from the course"
               value={expectation}
               onChange={onChange}
             />
+            <label>How did you know about us</label>
             <textarea
               required
-              id="knowus"
+              id="recognition_source"
               className="element"
-              name="knowus"
+              name="recognition_source"
               type="text"
-              placeholder="How did you know about us"
-              value={knowus}
+              value={recognition_source}
               onChange={onChange}
             />
+            <label>What is your optimal duration for the course</label>
             <input
               required
-              id="duration"
+              id="course_duration_feasibility"
               className="element"
-              name="duration"
+              name="course_duration_feasibility"
               type="text"
-              placeholder="What is your optimal duration for the course"
-              value={duration}
+              value={course_duration_feasibility}
               onChange={onChange}
             />
-
             <input
               type="button"
               name="submit"
