@@ -32,11 +32,6 @@ function UnderConstruction() {
   );
 }
 
-function onSubmit(e) {
-  e.preventDefault();
-  alert("submitted");
-}
-
 function App() {
   const [popup, setPopup] = useState(true);
 
@@ -49,9 +44,13 @@ function App() {
     address: "",
     expectation: "",
     recognition_source: "",
-    course_duration_feasibility: "",
+    course_duration_feasibility: "2 weeks",
   });
-
+  function onSubmit(e) {
+    e.preventDefault();
+    console.log(formData);
+    alert("submitted");
+  }
   const {
     first_name,
     middle_name,
@@ -151,15 +150,17 @@ function App() {
               onChange={onChange}
             />
             <label>What is your optimal duration for the course</label>
-            <input
-              required
-              id="course_duration_feasibility"
-              className="element"
+            <select
               name="course_duration_feasibility"
-              type="text"
+              id="course_duration_feasibility"
               value={course_duration_feasibility}
               onChange={onChange}
-            />
+            >
+              <option value="2 weeks">2 weeks</option>
+              <option value="3 weeeks">3 weeks</option>
+              <option value="1 month">1 month</option>
+              <option value="2 months">2 months</option>
+            </select>
             <input
               type="button"
               name="submit"
