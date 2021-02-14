@@ -22,6 +22,10 @@ body {
     background: rgba(22, 23, 25, 0.8);
     z-index: 9999;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .popup_content {
       background: $mayan_color;
       margin: 5rem auto;

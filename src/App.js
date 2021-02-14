@@ -17,7 +17,7 @@ import Graphic from "./components/Projects/Graphic/Graphic";
 import Projects from "./components/Projects/Projects";
 import { ImCross } from "react-icons/im";
 import Applicants from "./components/Applicants/Applicants";
-import Axios from "axios";
+import axios from "axios";
 
 function UnderConstruction() {
   return (
@@ -42,6 +42,7 @@ function App() {
     email: "",
     contact: "",
     address: "",
+    motivation: "motivation",
     expectation: "",
     recognition_source: "",
     course_duration_feasibility: "2 weeks",
@@ -49,7 +50,26 @@ function App() {
   function onSubmit(e) {
     e.preventDefault();
     console.log(formData);
-    alert("submitted");
+    setPopup(false);
+    // const response = axios;
+    axios
+      .post("http://api.sathinewyork.com/mayan/api/academy/applicants/", {
+        ...formData,
+        test: true,
+      })
+      .then((response) => console.log(response));
+    setFormData({
+      first_name: "",
+      middle_name: "",
+      last_name: "",
+      email: "",
+      contact: "",
+      address: "",
+      motivation: "motivation",
+      expectation: "",
+      recognition_source: "",
+      course_duration_feasibility: "2 weeks",
+    });
   }
   const {
     first_name,
@@ -58,6 +78,7 @@ function App() {
     email,
     contact,
     address,
+    motivation,
     expectation,
     recognition_source,
     course_duration_feasibility,
@@ -156,10 +177,10 @@ function App() {
               value={course_duration_feasibility}
               onChange={onChange}
             >
-              <option value="2 weeks">2 weeks</option>
-              <option value="3 weeeks">3 weeks</option>
-              <option value="1 month">1 month</option>
-              <option value="2 months">2 months</option>
+              <option value="2 weeks">Two weeks</option>
+              <option value="3 weeeks">Three weeks</option>
+              <option value="1 month">One month</option>
+              <option value="2 months">Two months</option>
             </select>
             <input
               type="button"
