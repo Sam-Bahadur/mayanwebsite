@@ -4,33 +4,31 @@ import React, { useState, useEffect } from "react";
 import style from "./Applicants.module.scss";
 
 export default function Applicants() {
-  const [data, setdata] = useState();
-  useEffect(() => {
+  const [data, setdata] = useState([]);
+  const [code, setcode] = useState("");
+  const [showData, setshowData] = useState(false);
+
+  const submitcode = async (e) => {
+    e.preventDefault();
     const headers = {
-      "X-PERM-CODE": "b92422f5-9346",
+      "X-PERM-CODE": `${code}`,
     };
-    axios
+    await axios
       .get(
         "http://api.sathinewyork.com/mayan/api/academy/applicants/?test=true",
         {
           headers: headers,
         }
       )
+      // .then((response) => console.log(response.data))
       .then((response) => setdata(response.data));
-  }, []);
-  const [code, setcode] = useState("");
-  const [showData, setshowData] = useState(false);
-  function submitcode(e) {
-    e.preventDefault();
-    const headers = {
-      "X-PERM-CODE": "b92422f5-9346",
-    };
-    if (code === "b92422f5-9346") {
+
+    if (data) {
       setshowData(true);
     } else {
       console.log("failed");
     }
-  }
+  };
   return (
     <Container>
       {showData ? null : (
