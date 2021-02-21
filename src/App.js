@@ -98,7 +98,7 @@ function App() {
             <h1>
               Register for our course <span>{/* <FiMail /> */}</span>
             </h1>
-            <label>First Name</label>
+            <label>First Name *</label>
             <input
               className="element"
               type="text"
@@ -114,41 +114,42 @@ function App() {
               value={middle_name}
               onChange={onChange}
             />
-            <label>Last Name</label>
+            <label>Last Name *</label>
             <input
               className="element"
               type="text"
               name="last_name"
               value={last_name}
               onChange={onChange}
-            />
-            <label>Email</label>
-            <input
               required
+            />
+            <label>Email *</label>
+            <input
               className="element"
               type="email"
               name="email"
               value={email}
               onChange={onChange}
-            />
-            <label>contact Number</label>
-            <input
               required
+            />
+            <label>contact Number *</label>
+            <input
               id="contactno"
               className="element"
               type="text"
               name="contact"
               value={contact}
               onChange={onChange}
+              required
             />
             <label>Address</label>
             <input
-              required
               className="element"
               type="text"
               name="address"
               value={address}
               onChange={onChange}
+              required
             />
             <label>Expectation from the course</label>
             <textarea

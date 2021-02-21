@@ -15,7 +15,7 @@ export default function Applicants() {
     };
     await axios
       .get(
-        "http://api.sathinewyork.com/mayan/api/academy/applicants/?test=true",
+        "https://api.sathinewyork.com/mayan/api/academy/applicants/?test=true",
         {
           headers: headers,
         }
