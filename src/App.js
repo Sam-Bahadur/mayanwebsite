@@ -53,7 +53,7 @@ function App() {
     setPopup(false);
     // const response = axios;
     axios
-      .post("http://api.sathinewyork.com/mayan/api/academy/applicants/", {
+      .post("https://api.sathinewyork.com/mayan/api/academy/applicants/", {
         ...formData,
         test: true,
       })
@@ -91,7 +91,7 @@ function App() {
     return (
       <modal className={style.popup}>
         <div className={style.popup_content}>
-          <form>
+          <form onSubmit={onSubmit}>
             <div className={style.cross} onClick={() => setPopup(false)}>
               <ImCross />
             </div>
@@ -100,6 +100,7 @@ function App() {
             </h1>
             <label>First Name *</label>
             <input
+              required
               className="element"
               type="text"
               name="first_name"
@@ -149,11 +150,9 @@ function App() {
               name="address"
               value={address}
               onChange={onChange}
-              required
             />
             <label>Expectation from the course</label>
             <textarea
-              required
               id="expectation"
               className="element"
               name="expectation"
@@ -163,7 +162,6 @@ function App() {
             />
             <label>How did you know about us</label>
             <textarea
-              required
               id="recognition_source"
               className="element"
               name="recognition_source"
@@ -183,12 +181,9 @@ function App() {
               <option value="1 month">One month</option>
               <option value="2 months">Two months</option>
             </select>
-            <input
-              type="button"
-              name="submit"
-              value="Submit →"
-              onClick={onSubmit}
-            />
+            <button type="submit" name="submit">
+              Submit →
+            </button>
           </form>
         </div>
       </modal>
