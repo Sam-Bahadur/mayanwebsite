@@ -18,6 +18,8 @@ import Projects from "./components/Projects/Projects";
 import { ImCross } from "react-icons/im";
 import Applicants from "./components/Applicants/Applicants";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function UnderConstruction() {
   return (
@@ -32,6 +34,7 @@ function UnderConstruction() {
   );
 }
 
+toast.configure();
 function App() {
   const [popup, setPopup] = useState(true);
 
@@ -70,6 +73,7 @@ function App() {
       recognition_source: "",
       course_duration_feasibility: "2 weeks",
     });
+    toast.dark("Thank you for registration");
   }
   const {
     first_name,
@@ -141,17 +145,19 @@ function App() {
               name="contact"
               value={contact}
               onChange={onChange}
+              minLength="10"
               required
             />
-            <label>Address</label>
+            <label>Address*</label>
             <input
               className="element"
               type="text"
               name="address"
               value={address}
               onChange={onChange}
+              required
             />
-            <label>Expectation from the course</label>
+            <label>Expectation from the course*</label>
             <textarea
               id="expectation"
               className="element"
@@ -159,8 +165,9 @@ function App() {
               type="text"
               value={expectation}
               onChange={onChange}
+              required
             />
-            <label>How did you know about us</label>
+            <label>How did you know about us*</label>
             <textarea
               id="recognition_source"
               className="element"
@@ -168,6 +175,7 @@ function App() {
               type="text"
               value={recognition_source}
               onChange={onChange}
+              required
             />
             <label>What is your optimal duration for the course</label>
             <select

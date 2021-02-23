@@ -62,6 +62,21 @@ body {
             outline: none;
           }
         }
+        button {
+          width: max-content;
+          color: black;
+          padding: 0.5rem 1rem;
+          display: block;
+          margin: 0.5rem auto;
+          border-radius: 10px;
+          font-weight: 700;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s all ease-in-out;
+          &:hover {
+            background: rgb(214, 167, 46);
+          }
+        }
         input[type="text"],
         input[type="email"],
         select {

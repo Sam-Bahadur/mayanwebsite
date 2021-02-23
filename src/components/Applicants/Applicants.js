@@ -2,14 +2,20 @@ import { Container } from "@material-ui/core";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import style from "./Applicants.module.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+toast.configure();
 
 export default function Applicants() {
   const [data, setdata] = useState([]);
   const [code, setcode] = useState("");
   const [showData, setshowData] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const submitcode = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const headers = {
       "X-PERM-CODE": `${code}`,
     };
@@ -24,6 +30,7 @@ export default function Applicants() {
       .then((response) => setdata(response.data));
 
     if (data) {
+      setLoading(false);
       setshowData(true);
     } else {
       console.log("failed");
@@ -41,6 +48,7 @@ export default function Applicants() {
           <input type="submit" onClick={submitcode} />
         </div>
       )}
+
       {showData ? (
         <>
           <table>
@@ -55,7 +63,7 @@ export default function Applicants() {
               <th>duration</th>
             </tr>
             {data.map((person) => (
-              <tr>
+              <tr key={person.contact}>
                 <td>{person.first_name}</td>
                 <td>{person.middle_name}</td>
                 <td>{person.last_name}</td>
@@ -68,6 +76,8 @@ export default function Applicants() {
             ))}
           </table>
         </>
+      ) : loading ? (
+        <div>loading data please wait</div>
       ) : null}
     </Container>
   );
