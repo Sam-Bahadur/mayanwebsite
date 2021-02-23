@@ -100,7 +100,7 @@ function App() {
               <ImCross />
             </div>
             <h1>
-              Register for our course <span>{/* <FiMail /> */}</span>
+              Register for our Python and Django <span>{/* <FiMail /> */}</span>
             </h1>
             <label>First Name *</label>
             <input
@@ -201,7 +201,9 @@ function App() {
   function banner() {
     return (
       <div className={style.banner} onClick={() => setPopup(true)}>
-        <div className={style.banner_content}>Register for our course</div>
+        <div className={style.banner_content}>
+          Register for our Python and Django Course
+        </div>
       </div>
     );
   }
