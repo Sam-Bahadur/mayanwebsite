@@ -100,7 +100,8 @@ function App() {
               <ImCross />
             </div>
             <h1>
-              Register for our Python and Django <span>{/* <FiMail /> */}</span>
+              Register for our Python and Django Course{" "}
+              <span>{/* <FiMail /> */}</span>
             </h1>
             <label>First Name *</label>
             <input
