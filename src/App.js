@@ -99,100 +99,102 @@ function App() {
             <div className={style.cross} onClick={() => setPopup(false)}>
               <ImCross />
             </div>
-            <h1>
-              Register for our Python and Django Course{" "}
-              <span>{/* <FiMail /> */}</span>
-            </h1>
-            <label>First Name *</label>
-            <input
-              required
-              className="element"
-              type="text"
-              name="first_name"
-              value={first_name}
-              onChange={onChange}
-            />
-            <label>Middle Name</label>
-            <input
-              className="element"
-              type="text"
-              name="middle_name"
-              value={middle_name}
-              onChange={onChange}
-            />
-            <label>Last Name *</label>
-            <input
-              className="element"
-              type="text"
-              name="last_name"
-              value={last_name}
-              onChange={onChange}
-              required
-            />
-            <label>Email *</label>
-            <input
-              className="element"
-              type="email"
-              name="email"
-              value={email}
-              onChange={onChange}
-              required
-            />
-            <label>contact Number *</label>
-            <input
-              id="contactno"
-              className="element"
-              type="text"
-              name="contact"
-              value={contact}
-              onChange={onChange}
-              minLength="10"
-              required
-            />
-            <label>Address*</label>
-            <input
-              className="element"
-              type="text"
-              name="address"
-              value={address}
-              onChange={onChange}
-              required
-            />
-            <label>Expectation from the course*</label>
-            <textarea
-              id="expectation"
-              className="element"
-              name="expectation"
-              type="text"
-              value={expectation}
-              onChange={onChange}
-              required
-            />
-            <label>How did you know about us*</label>
-            <textarea
-              id="recognition_source"
-              className="element"
-              name="recognition_source"
-              type="text"
-              value={recognition_source}
-              onChange={onChange}
-              required
-            />
-            <label>What is your optimal duration for the course</label>
-            <select
-              name="course_duration_feasibility"
-              id="course_duration_feasibility"
-              value={course_duration_feasibility}
-              onChange={onChange}
-            >
-              <option value="2 weeks">Two weeks</option>
-              <option value="3 weeeks">Three weeks</option>
-              <option value="1 month">One month</option>
-              <option value="2 months">Two months</option>
-            </select>
-            <button type="submit" name="submit">
-              Submit →
-            </button>
+            <div className="form_content">
+              <h1>
+                Register for our Python and Django Course{" "}
+                <span>{/* <FiMail /> */}</span>
+              </h1>
+              <label>First Name *</label>
+              <input
+                required
+                className="element"
+                type="text"
+                name="first_name"
+                value={first_name}
+                onChange={onChange}
+              />
+              <label>Middle Name</label>
+              <input
+                className="element"
+                type="text"
+                name="middle_name"
+                value={middle_name}
+                onChange={onChange}
+              />
+              <label>Last Name *</label>
+              <input
+                className="element"
+                type="text"
+                name="last_name"
+                value={last_name}
+                onChange={onChange}
+                required
+              />
+              <label>Email *</label>
+              <input
+                className="element"
+                type="email"
+                name="email"
+                value={email}
+                onChange={onChange}
+                required
+              />
+              <label>contact Number *</label>
+              <input
+                id="contactno"
+                className="element"
+                type="text"
+                name="contact"
+                value={contact}
+                onChange={onChange}
+                minLength="10"
+                required
+              />
+              <label>Address*</label>
+              <input
+                className="element"
+                type="text"
+                name="address"
+                value={address}
+                onChange={onChange}
+                required
+              />
+              <label>Expectation from the course*</label>
+              <textarea
+                id="expectation"
+                className="element"
+                name="expectation"
+                type="text"
+                value={expectation}
+                onChange={onChange}
+                required
+              />
+              <label>How did you know about us*</label>
+              <textarea
+                id="recognition_source"
+                className="element"
+                name="recognition_source"
+                type="text"
+                value={recognition_source}
+                onChange={onChange}
+                required
+              />
+              <label>What is your optimal duration for the course</label>
+              <select
+                name="course_duration_feasibility"
+                id="course_duration_feasibility"
+                value={course_duration_feasibility}
+                onChange={onChange}
+              >
+                <option value="2 weeks">Two weeks</option>
+                <option value="3 weeeks">Three weeks</option>
+                <option value="1 month">One month</option>
+                <option value="2 months">Two months</option>
+              </select>
+              <button type="submit" name="submit">
+                Submit →
+              </button>
+            </div>
           </form>
         </div>
       </modal>
