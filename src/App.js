@@ -206,7 +206,7 @@ function App() {
     return (
       <div className={style.banner}>
         <div className={style.banner_content}>
-          <a onClick={() => setPopup(true)}>Click Here</a>
+          <a onClick={() => setPopup(true)}>CLICK HERE</a>
           To Register for our Python and Django Course
           <a href={syllabus} target="_blank">
             Download Syllabus

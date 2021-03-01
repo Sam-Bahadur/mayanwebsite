@@ -15,7 +15,7 @@ header {
       padding: 0 1rem;
       position: relative;
       align-self: center;
-      a{
+      a {
         padding: 0 0.5rem;
         font-size: 1rem;
       }
@@ -66,32 +66,32 @@ header {
       cursor: pointer;
       position: relative;
       .services {
-        padding: .5rem .2rem;
+        padding: 0.5rem 0.2rem;
         font-size: 1rem;
         background: $background_secondary;
         list-style: none;
         position: absolute;
         left: 1rem;
-        top: 3rem;
+        top: 2.6rem;
         z-index: 99;
         width: max-content;
         border-radius: 10px;
         li {
-          padding: 0.1rem .5rem;
+          padding: 0.1rem 0.5rem;
           display: block;
           font-size: 1.2rem;
           font-weight: 300;
           position: relative;
-          transition: .3s all ease-in-out;
-            &:hover::after{
-              content: "";
-              height: 1px;
-              left: 0;
-              width: 100%;
-              position: absolute;
-              bottom: -0.1rem;
-              background: $mayan_color;
-            }
+          transition: 0.3s all ease-in-out;
+          &:hover::after {
+            content: "";
+            height: 1px;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            bottom: -0.1rem;
+            background: $mayan_color;
+          }
         }
       }
     }
