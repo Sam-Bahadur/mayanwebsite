@@ -103,6 +103,16 @@ works {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  works {
+    .work {
+      .work_title {
+        font-size: $headersmall;
+      }
+    }
+  }
+}
+
 .scroller {
   margin: 2rem 0;
   img {

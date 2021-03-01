@@ -12,12 +12,13 @@ export default function Applicants() {
   const [code, setcode] = useState("");
   const [showData, setshowData] = useState(false);
   const [loading, setLoading] = useState(false);
-
   const submitcode = async (e) => {
     e.preventDefault();
     setLoading(true);
+    toast.dark("please wait");
     const headers = {
       "X-PERM-CODE": `${code}`,
+      // "X-PERM-CODE": `b92422f5-9346`,
     };
     await axios
       .get(
@@ -26,9 +27,7 @@ export default function Applicants() {
           headers: headers,
         }
       )
-      // .then((response) => console.log(response.data))
       .then((response) => setdata(response.data));
-
     if (data) {
       setLoading(false);
       setshowData(true);
@@ -76,8 +75,6 @@ export default function Applicants() {
             ))}
           </table>
         </>
-      ) : loading ? (
-        <div>loading data please wait</div>
       ) : null}
     </Container>
   );

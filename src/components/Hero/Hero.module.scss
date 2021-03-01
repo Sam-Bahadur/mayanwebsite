@@ -12,3 +12,12 @@
   text-align: center;
   color: $fontsecondary;
 }
+
+@media only screen and (max-width: 768px) {
+  .hero_text {
+    font-size: $headersmall;
+  }
+  .hero_desc {
+    font-size: $desc;
+  }
+}

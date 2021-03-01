@@ -20,6 +20,7 @@ import Applicants from "./components/Applicants/Applicants";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import syllabus from "../src/assets/pdf/demo.pdf";
 
 function UnderConstruction() {
   return (
@@ -139,7 +140,7 @@ function App() {
                 onChange={onChange}
                 required
               />
-              <label>contact Number *</label>
+              <label>Contact Number *</label>
               <input
                 id="contactno"
                 className="element"
@@ -169,7 +170,7 @@ function App() {
                 onChange={onChange}
                 required
               />
-              <label>How did you know about us*</label>
+              <label>How did you know about us?*</label>
               <textarea
                 id="recognition_source"
                 className="element"
@@ -179,7 +180,7 @@ function App() {
                 onChange={onChange}
                 required
               />
-              <label>What is your optimal duration for the course</label>
+              <label>How long do you want the course to be?</label>
               <select
                 name="course_duration_feasibility"
                 id="course_duration_feasibility"
@@ -203,9 +204,13 @@ function App() {
 
   function banner() {
     return (
-      <div className={style.banner} onClick={() => setPopup(true)}>
+      <div className={style.banner}>
         <div className={style.banner_content}>
-          Register for our Python and Django Course
+          <a onClick={() => setPopup(true)}>Click Here</a>
+          To Register for our Python and Django Course
+          <a href={syllabus} target="_blank">
+            Download Syllabus
+          </a>
         </div>
       </div>
     );
@@ -253,6 +258,7 @@ function App() {
               <Route exact component={UnderConstruction} />
             </Switch>
           </div>
+
           <Footer />
         </HashRouter>
       </body>

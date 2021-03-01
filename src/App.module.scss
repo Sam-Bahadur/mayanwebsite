@@ -7,12 +7,35 @@ body {
   background-repeat: no-repeat;
   color: rgb(231, 231, 231);
   .banner {
-    background: rgb(173, 24, 24);
-    height: 2rem;
-    cursor: pointer;
+    background: rgb(255, 0, 0);
+    height: 4rem;
+    // cursor: pointer;
     .banner_content {
       width: max-content;
       margin: 0 auto;
+      padding-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: 0.15rem;
+      a {
+        cursor: pointer;
+        text-decoration: underline;
+        margin: 0 1rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      .banner {
+        height: 2rem;
+        .banner_content {
+          letter-spacing: 0.05rem;
+          font-size: 0.5rem;
+          a:nth-child(2) {
+            display: block;
+          }
+        }
+      }
     }
   }
   .popup {

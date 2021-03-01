@@ -59,7 +59,7 @@ export default function Contact() {
             </h4>
             <div className={style.contact_social}>
               <div>
-                <a href="http://">
+                <a href="http://www.facebook.com/">
                   <FaFacebookSquare />
                 </a>
               </div>

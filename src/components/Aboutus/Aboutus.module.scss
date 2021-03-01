@@ -10,8 +10,9 @@ aboutus {
 }
 
 @media only screen and (max-width: 768px) {
-  aboutus{
-    .para{
+  aboutus {
+    .para {
+      font-size: $desc_small;
       width: 100%;
     }
   }

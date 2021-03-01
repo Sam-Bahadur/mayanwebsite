@@ -4,14 +4,19 @@ table {
   width: max-content;
   margin: 0 auto;
   border: 2px solid white;
-  th {
-    border-bottom: 2px solid white;
+  tr {
+    th {
+      border-bottom: 2px solid white;
+      margin: 2rem;
+    }
   }
   tr {
     // margin-top: 2rem;
     td {
       border-bottom: 2px solid white;
-      margin: 2rem;
+      max-width: 20ch;
+      // margin: 2rem;
+      padding: 0.8rem;
     }
   }
 }
