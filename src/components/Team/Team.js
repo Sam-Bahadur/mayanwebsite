@@ -7,6 +7,7 @@ import yuyutsu from "../../assets/img/members/yuyutsu.jpg";
 import aabhushan from "../../assets/img/members/aabhushan.jpg";
 import bhibhushan from "../../assets/img/members/bhibhushan.jpg";
 import anish from "../../assets/img/members/anish.jpg";
+import navin from "../../assets/img/members/navin.jpg";
 // import Zoom from "react-reveal/Zoom"
 
 export default function Team(props) {
@@ -15,7 +16,6 @@ export default function Team(props) {
       <team>
         <div className={style.team_top}>Our Team</div>
         <div className={style.team}>
-
           <TeamSingle
             name={"Aabhusan Khadka"}
             phone={"+977-9841469812"}
@@ -26,7 +26,7 @@ export default function Team(props) {
             desc={
               "Aabhusan is one of the founding directors of Mayan. He completed his BA with a specialization in Mathematical Economics from Colorado College and worked as the Innovation paraprofessional at the Innovation department of Colorado College upon graduating. After living in the US for a little over 7 years, he decided to come back to his home-country with the desire to contribute to his nation. He is currently a research officer at Digo Bikash Institute. A knowledge seeker by nature, a researcher by profession and a visual and user experience designer by passion; Khadka is one of the essential creative brains behind the exceptional works produced by Mayan. "
             }
-            />
+          />
           <TeamSingle
             name={"Yuyutsu Karki"}
             phone={"+977-9843663478, 9818570300"}
@@ -37,7 +37,22 @@ export default function Team(props) {
             desc={
               "Yuyutshu graduated as a Mechanical Engineer from Kathmandu University. He is an engineer who actively seeks challenges and is keen on creating opportunities from them. Karki believes that Nepal’s geo-political location, sandwiched between India and China, is a strategic challenge but also has the potential to provide ample opportunities for the country. Thus, Nepali entities must upgrade themselves and become technologically equipped to seize up-coming opportunities. He believes this is where Mayan steps in as Mayan has dedicated itself to revolutionize the Media and IT sector of Nepal. A people’s person with an eye for atypical talent; Karki is the reason behind the growing dynamic team of Mayan. "
             }
-            />
+          />
+          <TeamSingle
+            name={"Navin Paudel"}
+            phone={"+977-9860185474"}
+            post={"Senior Developer"}
+            key={6}
+            email={"naween321@gmail.com"}
+            fb={"https://www.facebook.com/nabin.poudel.353"}
+            in={"http://www.instagram.com"}
+            ln={"https://www.linkedin.com"}
+            git={"https://github.com"}
+            image={navin}
+            desc={
+              "Navin is a senior Developer at Mayan media and IT consulting. He is also working at insight Workshop, KTM. He has graduated from Kathmandu Engineering College(affliated to TU) in 2018 "
+            }
+          />
           <TeamSingle
             name={"pradeep Timsina"}
             phone={"+977-9843534725"}
