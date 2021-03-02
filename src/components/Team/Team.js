@@ -39,21 +39,6 @@ export default function Team(props) {
             }
           />
           <TeamSingle
-            name={"Navin Paudel"}
-            phone={"+977-9860185474"}
-            post={"Senior Developer"}
-            key={6}
-            email={"naween321@gmail.com"}
-            fb={"https://www.facebook.com/nabin.poudel.353"}
-            in={"http://www.instagram.com"}
-            ln={"https://www.linkedin.com"}
-            git={"https://github.com"}
-            image={navin}
-            desc={
-              "Navin is a senior Developer at Mayan media and IT consulting. He is also working at insight Workshop, KTM. He has graduated from Kathmandu Engineering College(affliated to TU) in 2018 "
-            }
-          />
-          <TeamSingle
             name={"pradeep Timsina"}
             phone={"+977-9843534725"}
             post={"Web Developer"}

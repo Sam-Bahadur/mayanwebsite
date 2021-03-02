@@ -20,7 +20,7 @@ import Applicants from "./components/Applicants/Applicants";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import syllabus from "../src/assets/pdf/demo.pdf";
+import syllabus from "../src/assets/pdf/syllabus.pdf";
 
 function UnderConstruction() {
   return (
