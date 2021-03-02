@@ -43,6 +43,14 @@ header {
   @media screen and (max-width: 768px) {
     .extra_info {
       flex-wrap: wrap;
+      div {
+        &::after {
+          width: 0px;
+        }
+      }
+      .social {
+        margin-top: 1rem;
+      }
     }
   }
 

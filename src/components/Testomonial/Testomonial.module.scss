@@ -89,5 +89,17 @@ testomonial {
     .header {
       font-size: $headerbig;
     }
+    .testomonials {
+      .wrapper {
+        .testomonial {
+          padding: 2rem 2rem;
+          width: 100vw;
+          margin: 0 -1rem;
+          .testomonial_desc {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }

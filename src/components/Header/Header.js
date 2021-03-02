@@ -76,14 +76,26 @@ export default function Header() {
             </span>
             <h2>Anamnagar, Kathmandu</h2>
           </div>
-          <div>
-          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/mayanmedianepal/">
+          <div className={style.social}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/mayanmedianepal/"
+            >
               <FaFacebookF />
             </a>
-          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mayanmedianepal/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/mayanmedianepal/"
+            >
               <FaInstagram />
             </a>
-          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCmPTP4ZPUiHcbIQy3k5e-Pw">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.youtube.com/channel/UCmPTP4ZPUiHcbIQy3k5e-Pw"
+            >
               <FaYoutube />
             </a>
           </div>

@@ -41,6 +41,11 @@
   }
 }
 .form {
+  form {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
   span {
     padding: 1rem;
   }
@@ -102,5 +107,17 @@
   background: $background_secondary;
   .map_text {
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map {
+    .map_content {
+      margin: 0 auto;
+    }
+    .map_text {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
   }
 }

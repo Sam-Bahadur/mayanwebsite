@@ -12,7 +12,7 @@ import navin from "../../assets/img/members/navin.jpg";
 
 export default function Team(props) {
   return (
-    <Container>
+    <div className={style.team_wrapper}>
       <team>
         <div className={style.team_top}>Our Team</div>
         <div className={style.team}>
@@ -85,6 +85,6 @@ export default function Team(props) {
           />
         </div>
       </team>
-    </Container>
+    </div>
   );
 }
