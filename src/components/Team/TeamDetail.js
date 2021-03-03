@@ -7,7 +7,7 @@ export default function TeamDetail(props) {
     window.scrollTo(0, 0);
   });
   return (
-    <Container>
+    <>
       <div className={style.teamdetails}>
         <div className={style.image}>
           <img src={props.location.image} alt="" srcset="" />
@@ -17,6 +17,6 @@ export default function TeamDetail(props) {
         </div>
         <div className={style.desc}>{props.location.desc}</div>
       </div>
-    </Container>
+    </>
   );
 }

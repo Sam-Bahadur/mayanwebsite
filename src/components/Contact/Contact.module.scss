@@ -21,11 +21,6 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .contact {
-    padding: 1rem 2rem;
-  }
-}
 
 .contact_main {
   align-self: center;
@@ -110,6 +105,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .contact {
+    padding: 1rem 1rem;
+    .contact_main {
+      .contact_social {
+      }
+    }
+  }
   .map {
     .map_content {
       margin: 0 auto;

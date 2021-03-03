@@ -26,7 +26,6 @@ export default function Contact() {
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const onSubmit = async (e) => {
     e.preventDefault();
     alert("press ok and wait a few seconds...");

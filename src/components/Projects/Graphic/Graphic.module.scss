@@ -1,20 +1,29 @@
 @import "../../common/common.module.scss";
 
-.header{
-    text-align: center;
-    font-size: $headerbig;
-    margin: 1rem auto;
+.header {
+  text-align: center;
+  font-size: $headerbig;
+  margin: 1rem auto;
 }
-.graphic{
-    width: fit-content;
-    margin: 0 auto;
-    img{
-        width: 250px;
-        height: 150px;
-        object-fit: cover;
-        transition: .1s ease-in-out all;
-        &:hover{
-            transform: scale(.95);
-        }
+.graphic {
+  width: fit-content;
+  margin: 0 auto;
+  img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.1s ease-in-out all;
+    &:hover {
+      transform: scale(0.95);
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .graphic {
+    img {
+      margin: 0 auto;
+      object-fit: fill;
+    }
+  }
 }
