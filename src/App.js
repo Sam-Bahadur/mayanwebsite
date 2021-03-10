@@ -37,7 +37,7 @@ function UnderConstruction() {
 
 toast.configure();
 function App() {
-  const [popup, setPopup] = useState(false);
+  const [popup, setPopup] = useState(true);
 
   const [formData, setFormData] = useState({
     first_name: "",

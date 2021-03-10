@@ -126,29 +126,23 @@ export default function Testomonial(props) {
                 />
                 <div className={style.testomonial_desc}>
                   <div className={style.desc_title}>Testomonial</div>
-                  Our partnership with Mayan media has been tremendously
-                  fruitful. Mayan is definitely a one stop solution for all the
-                  media and IT needs as they claim to be. In terms of IT
-                  services, we worked with mayan media to design and develop a
-                  blog website. We also collaborated with Mayan media to run a
-                  workshop on digital security training. Mayan’s services for
-                  our media needs were also reliable as well as exceptional. We
-                  collaborated with Mayan’s videographers to plan, shoot and
-                  edit a short documentary about dignified menstruation in
-                  Accham and they also helped us create a radio jingle about
-                  dignified menstruation that was played in the popular radio
-                  frequencies in Nepal. To sum up, our working relationship with
-                  mayan media has been exceptional and we look forward to
-                  working with them again in the future.
+                  SAMABIKAS Nepal is very happy and content with Mayan Media for
+                  their service. What we liked most about them is their
+                  punctuality and importance to the details. We fully trust
+                  Mayan Media as they will do what is needed to be done to
+                  satisfy their customer needs. It was a pleasure working with
+                  young professionals who are reliable and intelligent. Our new
+                  website is easy to work with, has new features and looks very
+                  trendy. We are glad to find an IT consultant like Mayan Media!
                 </div>
                 <div className={style.testomonial_name}>
-                  Jagaran Nepal /{" "}
+                  Margie Mainali /{" "}
                   <a
                     href="http://www.jagaran-nepal.org.np"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span>www.jagaran-nepal.org.np</span>
+                    <span>www.samabikas.org.np</span>
                   </a>
                 </div>
               </div>
